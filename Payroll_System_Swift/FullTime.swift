@@ -10,4 +10,9 @@ class FullTime
 {
     var salary: Double!
     var bonus: Double!
+    
+    init(salary: Double, bonus: Double)
+    {
+        
+    }
 }
