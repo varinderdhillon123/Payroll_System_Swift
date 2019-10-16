@@ -8,5 +8,5 @@
 import Foundation
 class FullTime
 {
-    
+    print("This is Full Time class")
 }
