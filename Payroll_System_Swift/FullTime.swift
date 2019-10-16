@@ -8,6 +8,6 @@
 import Foundation
 class FullTime
 {
-    var b = 20
-    var n=18
+    var salary: Double!
+    var bonus: Double!
 }
