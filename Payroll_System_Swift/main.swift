@@ -7,3 +7,4 @@
 
 import Foundation
 
+print("This is main class")
