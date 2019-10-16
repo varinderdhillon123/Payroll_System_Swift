@@ -10,4 +10,9 @@ class PartTime
 {
     var rate: Double!
     var hoursWorked: Float!
+    
+    init(name: String, age: Int, earnings: Double, rate: Double, hoursWorked: Float)
+    {
+        
+    }
 }
