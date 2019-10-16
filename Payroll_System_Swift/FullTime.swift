@@ -9,4 +9,5 @@ import Foundation
 class FullTime
 {
     var b = 20
+    var n=18
 }
