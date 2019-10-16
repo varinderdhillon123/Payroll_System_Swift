@@ -9,6 +9,7 @@ import Foundation
 class CommissionBasedPartTime {
     var a = "this is commissionBasedPartTime class"
     func printData()  {
+        
         print(a)
     }
 }

@@ -8,5 +8,5 @@
 import Foundation
 class FullTime
 {
-    
+    var b = 20
 }

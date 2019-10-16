@@ -8,5 +8,5 @@
 import Foundation
 class PartTime
 {
-    
+    var a = 10
 }
