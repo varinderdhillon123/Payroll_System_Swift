@@ -8,5 +8,6 @@
 import Foundation
 class PartTime
 {
-    var a = 10
+    var rate: Double!
+    var hoursWorked: Float!
 }
