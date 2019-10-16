@@ -13,7 +13,9 @@ class Employee{
     
     init(name: String, age:Int, earnings:Double) {
         self.name=name
+        
         self.age=age
+        
         self.earnings=earnings
     }
     
