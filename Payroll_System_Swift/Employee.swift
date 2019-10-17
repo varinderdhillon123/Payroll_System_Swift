@@ -9,14 +9,14 @@ import Foundation
 class Employee{
     var name: String
     var age: Int
-    var earnings: Double
+    //var earnings: Double
     
-    init(name: String, age:Int, earnings:Double) {
+    init(name: String, age:Int) {
         self.name=name
         
         self.age=age
         
-        self.earnings=earnings
+        //self.earnings=earnings
     }
     
 }
