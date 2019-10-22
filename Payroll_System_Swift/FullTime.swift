@@ -17,8 +17,6 @@ class FullTime: Employee
         self.salary=salary
         self.bonus=bonus
         super.init(empID: empID, name: name, age: age)
-
-   
-
+        
     }
 }

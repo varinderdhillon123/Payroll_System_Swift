@@ -21,5 +21,11 @@ class Car: Vehicle
     {
         print("Distance: \(distanceTravelled)",
             "Capacity: \(capacity)")
+        
     }
+    func cal()
+    {
+        
+    }
+    
 }

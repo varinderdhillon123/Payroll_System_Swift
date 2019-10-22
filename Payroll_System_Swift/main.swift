@@ -2,10 +2,6 @@
 
 import Foundation
 
-
-    print("This is main Class")
-    print("varinder")
-
 func readJsonFileArray(jsonFileName: String)
 {
     let url = Bundle.main.url(forResource: "DataofEmp", withExtension: "json")
@@ -28,7 +24,7 @@ func readJsonFileArray(jsonFileName: String)
         var user: Employee!
         for userObject in jsonArray
         {
-            user = Employee()
+            user = Employee(empID)
             if let jsonDictionay =  userObject as? [String: Any]
             {
                 if let emptype = jsonDictionay["emptype"] as? String
@@ -69,7 +65,7 @@ func readJsonFileArray(jsonFileName: String)
             else if user.emptype=="PartTime"
             {
                 // print("\n\n")
-                let PTobj = PartTime(PTEmpID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: user.hourswork!)
+                let PTobj = PartTime(empID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: user.hourswork!)
                 PTobj.printMyData()
                 
             }
