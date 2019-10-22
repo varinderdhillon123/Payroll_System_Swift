@@ -38,9 +38,11 @@ class FullTime: Employee
     distanceTravelled = motorcycleObj._ distanceTravelled
     }
     
+    var totalSalary: Double
     override func calcEarnings() -> Double
     {
-        
+        totalSalary = salary+bonus
+        return totalSalary
     }
     
     override func printMyData() -> String
