@@ -18,7 +18,10 @@ class FullTime: Employee
         self.bonus=bonus
         super.init(empID: empID, name: name, age: age)
 
-   
-
+   }
+      if (employee._vehicle is null)
+    {
+      print("Employee has no vehicle registerd")
     }
+    else if
 }
