@@ -19,9 +19,17 @@ class FullTime: Employee
         super.init(empID: empID, name: name, age: age)
 
    }
-      if (employee._vehicle is null)
+    if (employee._vehicle is null)
     {
       print("Employee has no vehicle registerd")
     }
-    else if
+    else if(employee._vehicle is Car)
+    {
+    print("Employee has a Car\n")
+    let carObj = employee._vehicle as! Car
+    employee._vehicle?._vehicleType = "Car"
+    distanceTravelled = carObj._distanceTravelled
+    capacity = carObj._capacity
+    }
+    
 }
