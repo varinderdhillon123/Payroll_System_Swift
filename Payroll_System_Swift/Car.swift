@@ -16,5 +16,7 @@ class Car: Vehicle
         self.capacity = capacity
         super.init(make: make, color: color, plate: plate)
     }
-    
+    func printMyData() {
+        <#code#>
+    }
 }
