@@ -21,6 +21,8 @@ class Vehicle: IPrintable
     }
     func printMyData()
     {
-        
+        print("Make: \(make)",
+            "Color: \(color)",
+            "Plate: \(plate)")
     }
 }
