@@ -1,0 +1,64 @@
+//
+//  empData.json
+//  Payroll_System_Swift
+//
+//  Created by MacStudent on 2019-10-22.
+//
+
+import Foundation
+[
+    
+    {
+        "emptype": "Intern",
+        "id": 1,
+        "name": "Leanne Graham",
+        "age" : 54
+        
+    },
+    {"emptype": "Fulltime",
+        "id": 2,
+        "name": "Ervin Howell",
+        "age" : 36
+    },
+    {"emptype": "ComPartTime",
+        "id": 3,
+        "name": "Clementine Bauch",
+        "age": 34,
+        "hoursworked": 12
+    },
+    {"emptype": "Intern",
+        "id": 4,
+        "name": "Patricia Lebsack",
+        "age": 20
+    },
+    {"emptype": "Intern",
+        "id": 5,
+        "name": "Chelsey Dietrich",
+        "age": 24
+    },
+    {"emptype": "Intern",
+        "id": 6,
+        "name": "Mrs. Dennis Schulist",
+        "age": 74
+    },
+    {"emptype": "Intern",
+        "id": 7,
+        "name": "Kurtis Weissnat",
+        "age": 23
+    },
+    {"emptype": "Intern",
+        "id": 8,
+        "name": "Nicholas Runolfsdottir V",
+        "age": 35
+    },
+    {"emptype": "Intern",
+        "id": 9,
+        "name": "Glenna Reichert",
+        "age": 42
+    },
+    {"emptype": "Intern",
+        "id": 10,
+        "name": "Clementina DuBuque",
+        "age": 38
+    }
+]

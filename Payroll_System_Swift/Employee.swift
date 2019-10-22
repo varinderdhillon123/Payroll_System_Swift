@@ -6,17 +6,20 @@
 //
 
 import Foundation
-class Employee
-{
+
+class Employee{
+    var empID: Int
     var name: String
     var age: Int
-    var earnings: Double
+    //var earnings: Double
     
-    init(name: String, age : Int, earnings : Double)
-    {
+
+    init(empID: Int, name: String, age:Int) {
+        self.empID = empID
         self.name = name
         self.age = age
-        self.earnings = earnings
+        //self.earnings=earnings
+
     }
     
 }
