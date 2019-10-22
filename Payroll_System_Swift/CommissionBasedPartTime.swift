@@ -10,10 +10,10 @@ class CommissionBasedPartTime: PartTime {
     var commissionPerc: Double
     //  print("commission based part time class")
     
-    init(name: String, age:Int, rate: Double, hoursWorked: Float, commissionPerc: Double)
+    init(empID: Int,name: String, age:Int, rate: Double, hoursWorked: Float, commissionPerc: Double)
     {
         self.commissionPerc = commissionPerc
-        super.init(name: name, age: age, rate: rate, hoursWorked: hoursWorked)
+        super.init(empID: empID,name: name, age: age, rate: rate, hoursWorked: hoursWorked)
     }
     func calcEarnings() -> Double
     {
