@@ -11,11 +11,13 @@ class PartTime: Employee
     var rate: Double!
     var hoursWorked: Float!
     
+
     init(empID: Int,name: String, age: Int, rate: Double, hoursWorked: Float)
     {
         self.rate = rate
         self.hoursWorked = hoursWorked
         super.init(empID: empID, name: name, age: age)
+
 
     }
 }
