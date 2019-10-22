@@ -38,4 +38,9 @@ class FullTime: Employee
     distanceTravelled = motorcycleObj._ distanceTravelled
     }
     
+    override func printMyData() -> String
+    {
+        
+    }
+    
 }
