@@ -19,4 +19,9 @@ class PartTime: Employee
 
 
     }
+    
+    override func printMyData() -> String
+    {
+       super.printMyData()
+    }
 }
