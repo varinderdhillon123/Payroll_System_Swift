@@ -8,5 +8,8 @@
 import Foundation
 extension Double
 {
-    
+    func Currency()-> String
+    {
+       
+    }
 }
