@@ -8,5 +8,5 @@
 import Foundation
 protocol IPrintable
 {
-    func PrintMyData()
+    func printMyData()
 }
