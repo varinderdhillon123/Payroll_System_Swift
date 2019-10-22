@@ -40,7 +40,7 @@ class FullTime: Employee
     
     override func printMyData() -> String
     {
-        
+        super.printMyData()
     }
     
 }
