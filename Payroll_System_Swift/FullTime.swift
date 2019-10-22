@@ -31,5 +31,9 @@ class FullTime: Employee
     distanceTravelled = carObj._distanceTravelled
     capacity = carObj._capacity
     }
+    else if(employee._vehicle is Motorcycle)
+    {
+    
+    }
     
 }
