@@ -6,8 +6,11 @@
 //
 
 import Foundation
-class Employee
-{
+
+
+
+class Employee{
+
     var empID: Int
     var name: String
     var age: Int
@@ -19,6 +22,7 @@ class Employee
         case Intern
     }
     
+
     init(empID: Int, name: String, age:Int, emptype: TypeofEmployee)
     {
         self.empID = empID

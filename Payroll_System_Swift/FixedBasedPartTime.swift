@@ -6,9 +6,11 @@
 //
 
 import Foundation
-class FixedBasedPartTime: PartTime {
+class FixedBasedPartTime: PartTime
+{
     var fixedAmount: Double
     
+
     init(empID: Int,name: String, age:Int, fixedAmount: Double, rate: Double, hoursWorked: Float, emptype: TypeofEmployee)
     {
         self.fixedAmount = fixedAmount
