@@ -23,17 +23,19 @@ class FullTime: Employee
     {
       print("Employee has no vehicle registerd")
     }
-    else if(employee._vehicle is Car)
+    else if(employee._Vehicle is Car)
     {
     print("Employee has a Car\n")
-    let carObj = employee._vehicle as! Car
-    employee._vehicle?._vehicleType = "Car"
+    let carObj = employee._Vehicle as! Car
+    employee._Vehicle?._VehicleType = "Car"
     distanceTravelled = carObj._distanceTravelled
     capacity = carObj._capacity
     }
-    else if(employee._vehicle is Motorcycle)
+    else if(employee._Vehicle is Motorcycle)
     {
-    
+    let motorcycleObj = employee._vehicle as! Motorcycle
+    employee._Vehicle?._VehicleType = "Motorcycle"
+    distanceTravelled = motorcycleObj._ distanceTravelled
     }
     
 }
