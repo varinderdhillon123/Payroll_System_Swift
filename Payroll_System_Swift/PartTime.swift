@@ -20,4 +20,9 @@ class PartTime: Employee
 
 
     }
+    
+    func printMyData()
+    {
+        
+    }
 }
