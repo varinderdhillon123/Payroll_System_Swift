@@ -9,5 +9,5 @@ import Foundation
 
 class Vehicle
 {
-    
+    var plate: String
 }
