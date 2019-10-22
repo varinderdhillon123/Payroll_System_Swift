@@ -25,7 +25,7 @@ class Car: Vehicle
     }
     func cal()
     {
-        
+        rgf
     }
     
 }
