@@ -6,13 +6,16 @@
 //
 
 import Foundation
-class FixedBasedPartTime: PartTime {
+class FixedBasedPartTime: PartTime
+{
     var fixedAmount: Double
     
-    init(name: String, age:Int, fixedAmount: Double, rate: Double, hoursWorked: Float)
+//    init(name: String, age:Int, fixedAmount: Double, rate: Double, hoursWorked: Float)
+        
+    init(rate: Double, hoursWorked: Float, name: String, age: Int, earnings: Double, fixedAmount: Double)
     {
         self.fixedAmount = fixedAmount
-        super.init(name: name, age: age, rate: rate, hoursWorked: hoursWorked)
+        super.init(rate: rate, hoursWorked: hoursWorked, name: name, age: age, earnings: earnings)
     }
     func printMyData()
     {

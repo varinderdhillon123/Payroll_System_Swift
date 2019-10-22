@@ -6,14 +6,15 @@
 //
 
 import Foundation
-class CommissionBasedPartTime: PartTime {
+class CommissionBasedPartTime: PartTime
+{
     var commissionPerc: Double
-    //  print("commission based part time class")
-    
-    init(name: String, age:Int, rate: Double, hoursWorked: Float, commissionPerc: Double)
+   
+    init(name: String, age : Int, earnings : Double, rate: Double, hoursWorked: Float, commissionPerc: Double)
+        
     {
         self.commissionPerc = commissionPerc
-        super.init(name: name, age: age, rate: rate, hoursWorked: hoursWorked)
+        super.init(rate: rate, hoursWorked: hoursWorked, name: name, age: age, earnings: earnings)
     }
     func calcEarnings() -> Double
     {
@@ -21,7 +22,7 @@ class CommissionBasedPartTime: PartTime {
     }
     func printMyData()
     {
-        print("NAME: \(name) \n AGE: \(age) \n Commission Percentage: \(commissionPerc) \n HOURS WORKED: \(hoursWorked) \n RATE: \(rate)")
+        print("Commission Percentage: \(commissionPerc) \n HOURS WORKED: \(hoursWorked) \n RATE: \(rate)")
         print("Total Earnings: \(calcEarnings())")
     }
     

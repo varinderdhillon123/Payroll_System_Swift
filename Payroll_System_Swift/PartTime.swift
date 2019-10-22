@@ -6,16 +6,16 @@
 //
 
 import Foundation
-class PartTime
+class PartTime: Employee
 {
     var rate: Double!
     var hoursWorked: Float!
     
-    init(name: String, age: Int, earnings: Double, rate: Double, hoursWorked: Float)
+    init(rate: Double, hoursWorked: Float, name: String, age : Int, earnings : Double)
     {
         self.rate = rate
         self.hoursWorked = hoursWorked
-      // super.init(name: name, age: age, earnings: earnings)
+        super.init(name: name, age: age, earnings: earnings)
 
     }
 }
