@@ -12,13 +12,11 @@ class FullTime: Employee
     var bonus: Double!
     
 
-    init(empID: Int, name: String, age: Int, salary: Double, bonus: Double)
+    init(empID: Int, name: String, age: Int, salary: Double, bonus: Double, emptype: TypeofEmployee)
     {
         self.salary=salary
         self.bonus=bonus
-        super.init(empID: empID, name: name, age: age)
-
-   
+        super.init(empID: empID, name: name, age: age, emptype: emptype)
 
     }
 }
