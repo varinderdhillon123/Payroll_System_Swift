@@ -74,11 +74,14 @@ class Employee{
             //let car: Car = Vehicle as! Car
                       // Car.printMyData()
             print("Employee has a car")
+            let car: Car
+            car.printMyData()
         }else if (vehicle.vehicleType == .Motorcycle)
         {
-            
+            let bike: Motorcycle 
+            bike.printMyData()
            // Motorcycle.printMyData()
-            print("Employeeb has motorcycle")
+            print("Employee has motorcycle")
         }
         
 //        if(Vehicle is Car)
