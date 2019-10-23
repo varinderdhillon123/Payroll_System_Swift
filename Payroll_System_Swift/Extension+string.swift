@@ -8,6 +8,10 @@
 import Foundation
 extension String
 {
+    func kilometer() ->String
+    {
+        return "\(self) Km"
+    }
     
     
     
