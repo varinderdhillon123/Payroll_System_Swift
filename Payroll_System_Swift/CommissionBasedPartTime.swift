@@ -9,8 +9,6 @@ import Foundation
 class CommissionBasedPartTime: PartTime
 {
     var commissionPerc: Double
-
-    //  print("commission based part time class")
     
     init(empID: Int,name: String, age:Int, rate: Double, hoursWorked: Float, commissionPerc: Double, emptype: TypeofEmployee)
     {
@@ -30,4 +28,5 @@ class CommissionBasedPartTime: PartTime
         print("Total Earnings: \(calcEarnings())")
     }
     
+}
 }

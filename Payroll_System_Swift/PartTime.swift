@@ -24,4 +24,5 @@ class PartTime: Employee
     {
        super.printMyData()
     }
+
 }

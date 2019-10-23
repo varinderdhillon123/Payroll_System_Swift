@@ -7,7 +7,22 @@
 
 import Foundation
 
-class Vehicle
+class Vehicle: IPrintable
 {
+    var make: String
+    var color: String
     var plate: String
+    
+    init(make: String, color: String, plate: String)
+    {
+        self.make = make
+        self.color = color
+        self.plate = plate
+    }
+    func printMyData()
+    {
+        print("Make: \(make)",
+            "Color: \(color)",
+            "Plate: \(plate)")
+    }
 }
