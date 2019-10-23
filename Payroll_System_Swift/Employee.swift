@@ -76,7 +76,7 @@ class Employee{
         {
             
            // Motorcycle.printMyData()
-            print("Employeeb has motorcycle")
+            print("Employee has motorcycle")
         }
         
 //        if(Vehicle is Car)
