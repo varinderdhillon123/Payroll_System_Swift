@@ -18,57 +18,59 @@ func readJsonFileArray(jsonFileName: String)
         return
     }
     //print(json)
-    var userList = [String: Employee]()  //var userList = [String: User]()
+    var empList = [String: Input]()  //var userList = [String: User]()
     if let jsonArray = json as? [Any]
     {
-        var user: Employee!
-        for userObject in jsonArray
+        var emp: Input!  //object of Employee Class
+        for empObject in jsonArray
         {
-            user = Employee(empID)
-            if let jsonDictionay =  userObject as? [String: Any]
+            //emp = Employee(empID)
+            emp = Input()
+            if let jsonDictionay =  empObject as? [String: Any]
             {
-                if let emptype = jsonDictionay["emptype"] as? String
+                if let emptype = jsonDictionay["emptype"] as? TypeofEmployee
+        
                 {
                     //print(emptype)
-                    user.emptype = emptype
+                    emp.emptype = emptype
                 }
                 if let name = jsonDictionay["name"] as? String
                 {
                     //print(name)
-                    user.name = name
+                    emp.name = name
                 }
                 
-                if let id = jsonDictionay["empID"] as? Int
+                if let empID = jsonDictionay["empID"] as? Int
                 {
                     //print(id)
-                    user.empID = empID
+                    emp.empID = empID
                 }
                 if let age = jsonDictionay["age"] as? Int
                 {
                     //print(age)
-                    user.age = age
+                    emp.age = age
                 }
                 if let hrs = jsonDictionay["hoursworked"] as? Float
                 {
                     //print(age)
-                    user.hoursworked = hrs
+                    emp.hoursWorked = hrs
                 }
                 
             }
-            userList[user.name!] = user
+            empList[emp.name!] = emp
             
-            if user.emptype == "Intern"{
+            if emp.emptype! == .Intern {  //"Intern"{
                 //  print("\n\n\n")
-                let obj = Intern(IempID: user.id!,IName: user.name!, IAge: user.age!, IEarning: 100.0, SchoolName: "Lambton", IEmpType: user.emptype!)
-                obj.printMyData()
+               let obj = Intern(empID: emp.empID!,name: emp.name!, age: emp.age!, emptype: emp.emptype!, schoolName: "Lambton", earnings: 100.0)
+                   obj.printMyData()
             }
-            else if user.emptype=="PartTime"
-            {
-                // print("\n\n")
-                let PTobj = PartTime(empID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: user.hourswork!)
-                PTobj.printMyData()
-                
-            }
+//            else if emp.emptype! == .PartTime {   //"PartTime"
+//            {
+//                // print("\n\n")
+//                let PTobj = PartTime(empID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: user.hourswork!)
+//                PTobj.printMyData()
+//
+//            }
             
             
             
