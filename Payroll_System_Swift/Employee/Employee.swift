@@ -20,6 +20,10 @@ class Employee{
     var age: Int
     var emptype: TypeofEmployee
     
+    var birthYear : Int{
+        return self.currentYear-employeeAge!
+    }
+
     //var vehicleDictionary = [Int:Vehicle]()
     var vehicle:Vehicle!
 
@@ -38,6 +42,7 @@ class Employee{
             Employee Id: \(empID)
             Name: \(name)
             Age: \(age)
+            Employee Birth Year : \(birthYear)
             """)
         
         if vehicle == nil{
