@@ -45,7 +45,16 @@ self.emptype = emptype
         if vehicleDictionary.isEmpty{
             print("Employee has no Vehicle")
         }
-        else if vehicle.
+        else if (vehicle.vehicletype == .Car)
+        {
+            //let car: Car = Vehicle as! Car
+                       Car.printMyData()
+        }else if (vehicle.vehicletype == .Motorcycle)
+        {
+            
+            Motorcycle.printMyData()
+        }
+        
 //        if(Vehicle is Car)
 //        {
 //            let car: Car = Vehicle as! Car
