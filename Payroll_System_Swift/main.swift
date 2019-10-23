@@ -80,9 +80,7 @@ import Foundation
 //
 //}
 //readJsonFileArray(jsonFileName: "DataofEmp")
-var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 2.5, hoursWorked: 23, emptype: .FixedBasedPartTime)
-var emp2 = Intern(empID: 15, name: "Preet", age: 18, emptype: .Intern , schoolName: "Lambton" , earnings: 500.0)
-var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime)
+
 
 var empDic = [Int: Employee]()
 
@@ -93,8 +91,11 @@ var v4 = Vehicle(make: "Dodge", color: "Cyan", plate: "CSandhu", vehicleType: .C
 var v5 = Vehicle(make: "Ford", color: "Dark Blue", plate: "Char", vehicleType: .Car)
 var v6 = Vehicle(make: "RAM", color: "Silver", plate: "Deep", vehicleType: .Car)
 var v7 = Vehicle(make: "Ford", color: "Yellow", plate: "PB06", vehicleType: .Car)
+var v8 = Vehicle(make: "nil", color: "nil", plate: "nil", vehicleType: .None)
 var vehicleDic = [String: Vehicle]()
-
+var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 2.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: v4)
+var emp2 = Intern(empID: 15, name: "Preet", age: 18, emptype: .Intern , schoolName: "Lambton" , earnings: 500.0, vehicle: v1)
+var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime, vehicle: v8) // nil
 emp3.addVehicle(v: v1)
 emp2.addVehicle(v: v3)
 emp2.addVehicle(v: v5)

@@ -35,16 +35,17 @@ class Employee{
    
 
     //var vehicleDictionary = [Int:Vehicle]()
-    var vehicleDic = [String:Vehicle]()
+    //var vehicleDic = [String:Vehicle]()
     var vehicle: Vehicle!
     
     
-    init(empID: Int, name: String, age:Int, emptype: TypeofEmployee)
+    init(empID: Int, name: String, age:Int, emptype: TypeofEmployee, vehicle: Vehicle)
      {
         self.empID = empID
         self.name = name
         self.age = age
         self.emptype = emptype
+        self.vehicle = vehicle
      }
     func addVehicle(v:Vehicle){
         vehicleDic.updateValue(v, forKey: v.plate)
@@ -57,14 +58,15 @@ class Employee{
     {
         print("""
             ---------------------------------------
-            Employee Details
+            \t\t Employee Details
+            ---------------------------------------
             Employee Id: \(empID)
             Name: \(name)
             Age: \(age)
             Employee Birth Year : \(birthYear)
             """)
         
-        if vehicle == nil{
+        if (vehicle.vehicleType == .None){
             print("Employee has no Vehicle")
         }
         else if (vehicle.vehicleType == .Car)

@@ -9,6 +9,7 @@ import Foundation
 enum TypeofVehicle{
     case Car
     case Motorcycle
+    case None
 }
 class Vehicle: IPrintable
 {
