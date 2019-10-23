@@ -6,13 +6,16 @@
 //
 
 import Foundation
-
+enum TypeofVehicle{
+    case Car
+    case Motorcycle
+}
 class Vehicle: IPrintable
 {
     var make: String
     var color: String
     var plate: String
-    
+    var vehicletype:TypeofVehicle
     init(make: String, color: String, plate: String)
     {
         self.make = make
