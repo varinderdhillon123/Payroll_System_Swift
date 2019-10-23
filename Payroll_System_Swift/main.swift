@@ -108,8 +108,12 @@ addEmployee(e: emp1)
 addEmployee(e: emp2)
 addEmployee(e: emp3)
 
-for e in empDic.keys.sorted(){
+for e in empDic.keys.sorted()
+{
     empDic[e]?.printMyData()
+
+    
+    
 }
 
 

@@ -25,8 +25,11 @@ class FixedBasedPartTime: PartTime
     override func printMyData()
     {
         super.printMyData()
+        print("--Employee is Fixed Based Part Time--")
 //        print("NAME: \(name) \n AGE: \(age) \n FIXED AMOUNT: \(fixedAmount) \n HOURS WORKED: \(hoursWorked) \n RATE: \(rate))")
-        print("FixedAmount: \(fixedAmount)")
+        print("FixedAmount: \(fixedAmount.Currency())")
+        print("Total Earnings: \(calEarnings().Currency())")
+        print(checkVehicle())
     }
     
     

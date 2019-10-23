@@ -16,7 +16,7 @@ class Vehicle: IPrintable
     var make: String
     var color: String
     var plate: String
-    var vehicleType:TypeofVehicle
+    public var vehicleType:TypeofVehicle
     init(make: String, color: String, plate: String, vehicleType: TypeofVehicle)
     {
         self.make = make
