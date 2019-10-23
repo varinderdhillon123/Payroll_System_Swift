@@ -40,13 +40,13 @@ class FullTime: Employee
     }
     
     var totalSalary: Double
-    override func calcEarnings() -> Double
+    func calcEarnings() -> Double
     {
         totalSalary = salary+bonus
         return totalSalary
     }
     
-    override func printMyData() -> String
+   override func printMyData() 
     {
         super.printMyData()
     }
