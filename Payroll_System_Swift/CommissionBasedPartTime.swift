@@ -24,6 +24,7 @@ class CommissionBasedPartTime: PartTime
     }
     override func printMyData()
     {
+
          super.printMyData()
         print("--Employee is Commission Based Part Time--")
        
@@ -31,6 +32,7 @@ class CommissionBasedPartTime: PartTime
         
         print("Total Earnings: \(calcEarnings().Currency())")
         print(checkVehicle())
+
     }
     
 }

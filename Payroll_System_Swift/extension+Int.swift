@@ -7,10 +7,12 @@
 
 import Foundation
 
-extension Float
+extension Int
 {
-    func addHours() -> String
+    func Years() ->String
     {
-        return "\(self) hours"
+        return "\(self) years"
     }
+    
+    
 }

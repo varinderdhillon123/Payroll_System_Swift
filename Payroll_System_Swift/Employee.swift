@@ -63,9 +63,9 @@ class Employee{
             ---------------------------------------
             Employee Id: \(empID)
             Name: \(name)
-            Age: \(age)
+           Age: \(age)
             Employee's Birth Year : \(birthYear)
-            """)
+
     }
     func checkVehicle()
     {
