@@ -12,16 +12,17 @@ class Motorcycle: Vehicle
     
 
  //   init(make: String, color: String, plate: String, distanceTravelled: Double)
-    init(make: String, color: String, plate: String, vehicleType: TypeofVehicle, distanceTravelled: Double)
+    init(make: String, color: String, plate: String, distanceTravelled: Double)
     
 
     {
         self.distanceTravelled = distanceTravelled
-        super.init(make: make, color: color, plate: plate, vehicleType: vehicleType)
+        super.init(make: make, color: color, plate: plate)
     }
     
     override func printMyData()
     {
+        super.printMyData()
        print("Distance Travelled: \(distanceTravelled.Currency())")
         
        
