@@ -51,7 +51,7 @@ class FullTime: Employee
 
     {
         super.printMyData()
-        print("Total Salary : \(totalSalary)")
+        print("Total Salary: \(totalSalary)")
     }
     
 }
