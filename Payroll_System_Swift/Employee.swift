@@ -20,9 +20,10 @@ class Employee{
     var age: Int
     var emptype: TypeofEmployee
     
-    var birthYear : Int{
-        return self.currentYear-employeeAge!
-    }
+    var birthYear : Int
+//    {
+//        //return self.- age!
+//    }
 
     //var vehicleDictionary = [Int:Vehicle]()
     var vehicle:Vehicle!
