@@ -36,11 +36,8 @@ class Employee{
 
     //var vehicleDictionary = [Int:Vehicle]()
     var vehicleDic = [String:Vehicle]()
-
-    func addVehicle(v:Vehicle){
-        vehicleDic.updateValue(v, forKey: v.plate)
-        
-    }
+    var vehicle: Vehicle!
+    
     
     init(empID: Int, name: String, age:Int, emptype: TypeofEmployee)
      {
@@ -49,6 +46,13 @@ class Employee{
         self.age = age
         self.emptype = emptype
      }
+    func addVehicle(v:Vehicle){
+        vehicleDic.updateValue(v, forKey: v.plate)
+        
+    }
+//    func removeVehicle(v: Vehicle){
+//        vehicleDic.r
+//    }
     func printMyData()
     {
         print("""

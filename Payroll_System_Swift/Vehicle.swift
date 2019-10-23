@@ -23,6 +23,11 @@ class Vehicle: IPrintable
         self.plate = plate
         self.vehicleType = vehicleType
     }
+    
+    func addVehicle(v:Vehicle){
+        vehicleDic.updateValue(v, forKey: v.plate)
+        
+    }
     func printMyData()
     {
         print("Make: \(make)",
