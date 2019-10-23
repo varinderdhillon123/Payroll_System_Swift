@@ -1,5 +1,5 @@
 //
-//  extension+Int.swift
+//  extension+Float.swift
 //  Payroll_System_Swift
 //
 //  Created by MacStudent on 2019-10-23.

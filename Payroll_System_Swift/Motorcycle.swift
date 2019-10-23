@@ -22,8 +22,8 @@ class Motorcycle: Vehicle
     
     override func printMyData()
     {
-       print("Distance Travelled: \(distanceTravelled)")
-        //print()
+       print("Distance Travelled: \(distanceTravelled.Currency())")
+        
        
     }
 }
