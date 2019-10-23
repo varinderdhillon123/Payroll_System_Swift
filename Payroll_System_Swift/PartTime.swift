@@ -10,17 +10,17 @@ class PartTime: Employee
 {
     var rate: Double!
     var hoursWorked: Float!
-    
 
-    init(empID: Int,name: String, age: Int, rate: Double, hoursWorked: Float)
+    init(empID: Int,name: String, age: Int, rate: Double, hoursWorked: Float, emptype: TypeofEmployee)
     {
         self.rate = rate
         self.hoursWorked = hoursWorked
-        super.init(empID: empID, name: name, age: age)
+         super.init(empID: empID, name: name, age: age, emptype: emptype)
     }
     
     override func printMyData() -> String
     {
        super.printMyData()
     }
+
 }

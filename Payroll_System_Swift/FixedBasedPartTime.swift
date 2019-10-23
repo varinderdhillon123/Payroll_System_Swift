@@ -11,14 +11,11 @@ class FixedBasedPartTime: PartTime
     var fixedAmount: Double
     
 
-    init(empID: Int,name: String, age:Int, fixedAmount: Double, rate: Double, hoursWorked: Float)
+    init(empID: Int,name: String, age:Int, fixedAmount: Double, rate: Double, hoursWorked: Float, emptype: TypeofEmployee)
     {
         self.fixedAmount = fixedAmount
-        super.init(empID: empID,name: name, age: age, rate: rate, hoursWorked: hoursWorked)
+        super.init(empID: empID,name: name, age: age, rate: rate, hoursWorked: hoursWorked, emptype: emptype)
 
-//    init(name: String, age:Int, fixedAmount: Double, rate: Double, hoursWorked: Float)
-        
-    
     }
     func printMyData()
     {
