@@ -46,7 +46,9 @@ class FullTime: Employee
         return totalSalary
     }
     
-    override func printMyData()
+
+   override func printMyData() 
+
     {
         super.printMyData()
         print("Total Salary : \(totalSalary)")
