@@ -22,7 +22,7 @@ class PartTime: Employee
     {
        super.printMyData()
         print("Rate per hour: \(rate!)")
-         print("No. of hours: \(hoursWorked!)")
+         print("No. of hours: \(hoursWorked!.addHours())")
     }
 
 }
