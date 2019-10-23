@@ -6,7 +6,7 @@
 //
 
 import Foundation
-extension String
+extension Double
 {
     func kilometer() ->String
     {
