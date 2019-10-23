@@ -6,9 +6,12 @@
 //
 
 import Foundation
-
-
-
+enum TypeofEmployee{
+    case FullTime
+    case FixedBasedPartTime
+    case CommissionBasedPartTime
+    case Intern
+}
 
 class Employee{
 
@@ -16,13 +19,8 @@ class Employee{
     var name: String
     var age: Int
     var emptype: TypeofEmployee
-    enum TypeofEmployee{
-        case FullTime
-        case FixedBasedPartTime
-        case CommissionBasedPartTime
-        case Intern
-    }
-    var vehicleDictionary = [Int:Vehicle]()
+    
+    //var vehicleDictionary = [Int:Vehicle]()
     var vehicle:Vehicle!
 
     init(empID: Int, name: String, age:Int, emptype: TypeofEmployee)
@@ -30,7 +28,7 @@ class Employee{
         self.empID = empID
         self.name = name
         self.age = age
-self.emptype = emptype
+        self.emptype = emptype
      }
     func printMyData()
     {
@@ -42,17 +40,19 @@ self.emptype = emptype
             Age: \(age)
             """)
         
-        if vehicleDictionary.isEmpty{
+        if vehicle == nil{
             print("Employee has no Vehicle")
         }
-        else if (vehicle.vehicletype == .Car)
+        else if (vehicle.vehicleType == .Car)
         {
             //let car: Car = Vehicle as! Car
-                       Car.printMyData()
-        }else if (vehicle.vehicletype == .Motorcycle)
+                      // Car.printMyData()
+            print("Employee has a car")
+        }else if (vehicle.vehicleType == .Motorcycle)
         {
             
-            Motorcycle.printMyData()
+           // Motorcycle.printMyData()
+            print("Employeeb has motorcycle")
         }
         
 //        if(Vehicle is Car)

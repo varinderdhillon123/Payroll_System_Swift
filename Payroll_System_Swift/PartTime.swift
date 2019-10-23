@@ -18,7 +18,7 @@ class PartTime: Employee
          super.init(empID: empID, name: name, age: age, emptype: emptype)
     }
     
-    func printMyData() -> String
+    override func printMyData() 
     {
        super.printMyData()
     }

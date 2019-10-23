@@ -15,12 +15,13 @@ class Vehicle: IPrintable
     var make: String
     var color: String
     var plate: String
-    var vehicletype:TypeofVehicle
-    init(make: String, color: String, plate: String)
+    var vehicleType:TypeofVehicle
+    init(make: String, color: String, plate: String, vehicleType: TypeofVehicle)
     {
         self.make = make
         self.color = color
         self.plate = plate
+        self.vehicleType = vehicleType
     }
     func printMyData()
     {
