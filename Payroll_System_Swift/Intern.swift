@@ -8,7 +8,7 @@
 import Foundation
 class Intern: Employee
 {
-    private var schoolName: String
+    var schoolName: String
     private var earnings: Double
     var Vehicle_dict = [Int: Vehicle]()
     
