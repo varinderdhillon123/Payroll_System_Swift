@@ -93,6 +93,8 @@ var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, h
 
 var empDic = [Int: Employee]()
 
+var v1 = Vehicle()
+
 
 
 
