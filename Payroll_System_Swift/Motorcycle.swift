@@ -13,5 +13,6 @@ class Motorcycle: Vehicle
     init(make: String, color: String, plate: String, distanceTravelled: Double)
     {
         self.distanceTravelled = distanceTravelled
+        super.init(make: make, color: color, plate: plate)
     }
 }
