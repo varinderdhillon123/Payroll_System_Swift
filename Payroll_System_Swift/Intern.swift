@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class Intern
+class Intern: Employee
 {
     
 }
