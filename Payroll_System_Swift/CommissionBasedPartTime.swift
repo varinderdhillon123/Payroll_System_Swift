@@ -26,7 +26,7 @@ class CommissionBasedPartTime: PartTime
     {
         super.printMyData()
         //print("Commission Percentage: \(commissionPerc)")
-        print("Total Earnings: \(calcEarnings())")
+        print("Total Earnings: \(calcEarnings().Currency())")
     }
     
 }
