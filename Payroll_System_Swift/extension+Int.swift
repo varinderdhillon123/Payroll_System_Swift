@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Int
+extension Float
 {
     func addHours() -> String
     {
