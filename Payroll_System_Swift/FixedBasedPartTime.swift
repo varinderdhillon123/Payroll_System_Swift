@@ -17,7 +17,7 @@ class FixedBasedPartTime: PartTime
         super.init(empID: empID,name: name, age: age, rate: rate, hoursWorked: hoursWorked, emptype: emptype)
 
     }
-    func printMyData()
+    override func printMyData()
     {
         print("NAME: \(name) \n AGE: \(age) \n FIXED AMOUNT: \(fixedAmount) \n HOURS WORKED: \(hoursWorked) \n RATE: \(rate)")
     }
