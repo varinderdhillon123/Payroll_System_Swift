@@ -20,7 +20,7 @@ class Car: Vehicle
     override func printMyData()
     {
         print("Distance: \(distanceTravelled.kilometer())",
-            "Capacity: \(capacity)")
+            "Capacity: \(capacity.capacity())")
         }
   
     
