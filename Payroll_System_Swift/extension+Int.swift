@@ -9,5 +9,8 @@ import Foundation
 
 extension Int
 {
-   
+    func addHours() -> String
+    {
+        return "\(self) hours"
+    }
 }

@@ -27,10 +27,12 @@ class Employee{
 //    calendar.component(.month, from: date)
 //    calendar.component(.day, from: date)
     
+
     var birthYear : Int{
         
         return currentYear-age
     }  //https://stackoverflow.com/questions/48670169/set-a-variable-with-current-year-in-swift
+   
 
     //var vehicleDictionary = [Int:Vehicle]()
     var vehicle:Vehicle!
