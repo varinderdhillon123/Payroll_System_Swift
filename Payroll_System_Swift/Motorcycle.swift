@@ -15,4 +15,9 @@ class Motorcycle: Vehicle
         self.distanceTravelled = distanceTravelled
         super.init(make: make, color: color, plate: plate)
     }
+    
+    override func printMyData()
+    {
+       print("Distance Travelled: \(distanceTravelled)")
+    }
 }
