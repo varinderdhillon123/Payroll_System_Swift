@@ -10,7 +10,7 @@ extension Double
 {
     func Currency()-> String
     {
-        return String(format: "$ %0.2f", Double(self))
+        return String(format: "$%0.2f", Double(self))
     }
     
     func kilometer() ->String
