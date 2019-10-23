@@ -13,7 +13,10 @@ extension String
         return "\(self) Km"
     }
     
-    
+    func capacity() ->String
+    {
+        return "\(self) seater"
+    }
     
     
     
