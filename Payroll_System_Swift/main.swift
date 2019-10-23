@@ -1,7 +1,6 @@
 
 
 import Foundation
-
 func readJsonFileArray(jsonFileName: String)
 {
     let url = Bundle.main.url(forResource: "DataofEmp", withExtension: "json")
@@ -29,10 +28,11 @@ func readJsonFileArray(jsonFileName: String)
             if let jsonDictionay =  empObject as? [String: Any]
             {
                 if let emptype = jsonDictionay["emptype"] as? TypeofEmployee
-        
+                    
                 {
-                    //print(emptype)
+                    
                     emp.emptype = emptype
+                    print(emptype)
                 }
                 if let name = jsonDictionay["name"] as? String
                 {
@@ -61,17 +61,16 @@ func readJsonFileArray(jsonFileName: String)
             
             if emp.emptype! == .Intern {  //"Intern"{
                 //  print("\n\n\n")
-               let obj = Intern(empID: emp.empID!,name: emp.name!, age: emp.age!, emptype: emp.emptype!, schoolName: "Lambton", earnings: 100.0)
-                   obj.printMyData()
+                let obj = Intern(empID: emp.empID!,name: emp.name!, age: emp.age!, emptype: emp.emptype!, schoolName: "Lambton", earnings: 100.0)
+                obj.printMyData()
             }
-//            else if emp.emptype! == .PartTime {   //"PartTime"
-//            {
-//                // print("\n\n")
-//                let PTobj = PartTime(empID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: user.hourswork!)
-//                PTobj.printMyData()
-//
-//            }
-//
+            else if emp.emptype! == .FixedBasedPartTime   //"PartTime"
+            {
+                // print("\n\n")
+                let PTobj = FixedBasedPartTime(empID: emp.empID!,name: emp.name!,  age: emp.age!, fixedAmount: 500.0, rate: 2, hoursWorked: 23, emptype: .FixedBasedPartTime)
+                PTobj.printMyData()
+            }
+            
             
             
             
@@ -80,6 +79,9 @@ func readJsonFileArray(jsonFileName: String)
     }
     
 }
-
-
 readJsonFileArray(jsonFileName: "DataofEmp")
+var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 2.5, hoursWorked: 23, emptype: .FixedBasedPartTime)
+var emp2 = Intern(empID: 15, name: "Preet", age: 18, emptype: .Intern , schoolName: "Lambton" , earnings: 500.0)
+var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime)
+var empDic = [Int: Employee]()
+var v1 = Vehicle()
