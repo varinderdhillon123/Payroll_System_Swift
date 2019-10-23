@@ -11,7 +11,7 @@ class FixedBasedPartTime: PartTime
     var fixedAmount: Double
     
 
-    init(empID: Int,name: String, age:Int, fixedAmount: Double, rate: Double, hoursWorked: Float, emptype: TypeofEmployee, vehicle: Vehicle)
+    init(empID: Int,name: String, age:Int, fixedAmount: Double, rate: Double, hoursWorked: Float, emptype: TypeofEmployee, vehicle: Vehicle?)
     {
         self.fixedAmount = fixedAmount
         super.init(empID: empID,name: name, age: age, rate: rate, hoursWorked: hoursWorked, emptype: emptype, vehicle: vehicle)
@@ -25,8 +25,12 @@ class FixedBasedPartTime: PartTime
     override func printMyData()
     {
         super.printMyData()
+        print("--Employee is Fixed Based Part Time--")
 //        print("NAME: \(name) \n AGE: \(age) \n FIXED AMOUNT: \(fixedAmount) \n HOURS WORKED: \(hoursWorked) \n RATE: \(rate))")
         print("FixedAmount: \(fixedAmount.Currency())")
+        print("Total Earnings: \(calEarnings().Currency())")
+        print(checkVehicle())
+
     }
     
     

@@ -12,7 +12,7 @@ class Intern: Employee
    private var earnings: Double
    var Vehicle_dict = [Int: Vehicle]()
     
-    init(empID: Int, name: String, age: Int, emptype: TypeofEmployee , schoolName: String , earnings: Double, vehicle: Vehicle)
+    init(empID: Int, name: String, age: Int, emptype: TypeofEmployee , schoolName: String , earnings: Double, vehicle: Vehicle?)
 {
     self.schoolName = schoolName
     self.earnings = earnings

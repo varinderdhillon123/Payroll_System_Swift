@@ -51,8 +51,9 @@ class FullTime: Employee
 
     {
         super.printMyData()
+        print("--Employee is Full Time--")
         print("Salary : \(salary!.Currency())")
-        print(" Bonus : \(bonus!)")
+        print(" Bonus : \(bonus.Currency())")
         print("Total Salary: \(totalSalary.Currency())")
     }
     

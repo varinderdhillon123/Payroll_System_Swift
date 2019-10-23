@@ -36,10 +36,10 @@ class Employee{
 
     //var vehicleDictionary = [Int:Vehicle]()
     //var vehicleDic = [String:Vehicle]()
-    var vehicle: Vehicle!
+    var vehicle: Vehicle?
     
     
-    init(empID: Int, name: String, age:Int, emptype: TypeofEmployee, vehicle: Vehicle)
+    init(empID: Int, name: String, age:Int, emptype: TypeofEmployee, vehicle: Vehicle?)
      {
         self.empID = empID
         self.name = name
@@ -56,6 +56,7 @@ class Employee{
 //    }
     func printMyData()
     {
+        
         print("""
             ---------------------------------------
             \t\t Employee Details
@@ -65,22 +66,32 @@ class Employee{
              Age: \(age.Years())
             Employee Birth Year : \(birthYear)
             """)
-        
-        if (vehicle.vehicleType == .None){
+    }
+    func checkVehicle()
+    {
+        if (vehicle?.vehicleType == nil){
             print("Employee has no Vehicle")
         }
-        else if (vehicle.vehicleType == .Car)
+        else if (vehicle?.vehicleType == .Car)
         {
-            //let car: Car = Vehicle as! Car
-                      // Car.printMyData()
             print("Employee has a car")
-        }else if (vehicle.vehicleType == .Motorcycle)
-        {
+           // let car: Car = Vehicle.vehicleType as! Car
+            vehicle?.printMyData()
             
+            
+            //print("Make: \(Car)")
+//            let car: vehicle.vehicleType
+//            car.printMyData()
+        }else if (vehicle?.vehicleType == .Motorcycle)
+        {
+            vehicle?.printMyData()
+//            let bike: Motorcycle
+//            Motorcycle.printMyData()
            // Motorcycle.printMyData()
             print("Employee has motorcycle")
         }
         
+    }
 //        if(Vehicle is Car)
 //        {
 //            let car: Car = Vehicle as! Car
@@ -100,4 +111,4 @@ class Employee{
 
     }
     
-}
+

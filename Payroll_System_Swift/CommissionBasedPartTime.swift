@@ -10,7 +10,7 @@ class CommissionBasedPartTime: PartTime
 {
     var commissionPerc: Double
     
-    init(empID: Int,name: String, age:Int, rate: Double, hoursWorked: Float, commissionPerc: Double, emptype: TypeofEmployee, vehicle: Vehicle)
+    init(empID: Int,name: String, age:Int, rate: Double, hoursWorked: Float, commissionPerc: Double, emptype: TypeofEmployee, vehicle: Vehicle?)
     {
         self.commissionPerc = commissionPerc
 
@@ -24,9 +24,15 @@ class CommissionBasedPartTime: PartTime
     }
     override func printMyData()
     {
-        super.printMyData()
-        //print("Commission Percentage: \(commissionPerc)")
+
+         super.printMyData()
+        print("--Employee is Commission Based Part Time--")
+       
+        print("Commission Percentage: \(commissionPerc)")
+        
         print("Total Earnings: \(calcEarnings().Currency())")
+        print(checkVehicle())
+
     }
     
 }
