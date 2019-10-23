@@ -18,15 +18,4 @@ extension String
         return "\(self) seater"
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
