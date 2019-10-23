@@ -17,7 +17,7 @@ class FixedBasedPartTime: PartTime
         super.init(empID: empID,name: name, age: age, rate: rate, hoursWorked: hoursWorked, emptype: emptype)
 
     }
-    func calEarnings()
+    func calEarnings() -> Double
     {
            return (rate * Double(hoursWorked) + fixedAmount)
         
