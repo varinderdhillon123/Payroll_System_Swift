@@ -8,8 +8,8 @@
 import Foundation
 class Intern: Employee
 {
-    var schoolName: String
-     var earnings: Double
+   private var schoolName: String
+     private var earnings: Double
     var Vehicle_dict = [Int: Vehicle]()
     
     init(empID: Int, name: String, age: Int, emptype: TypeofEmployee , schoolName: String , earnings: Double)
