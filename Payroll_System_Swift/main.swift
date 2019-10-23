@@ -38,10 +38,10 @@ func readJsonFileArray(jsonFileName: String)
                     user.name = name
                 }
                 
-                if let id = jsonDictionay["id"] as? Int
+                if let id = jsonDictionay["empID"] as? Int
                 {
                     //print(id)
-                    user.id = id
+                    user.empID = empID
                 }
                 if let age = jsonDictionay["age"] as? Int
                 {
@@ -51,7 +51,7 @@ func readJsonFileArray(jsonFileName: String)
                 if let hrs = jsonDictionay["hoursworked"] as? Float
                 {
                     //print(age)
-                    user.hourswork = hrs
+                    user.hoursworked = hrs
                 }
                 
             }
