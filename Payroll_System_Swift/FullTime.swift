@@ -19,25 +19,25 @@ class FullTime: Employee
       super.init(empID: empID, name: name, age: age, emptype: emptype)
 
    }
-    if (employee._vehicle is null)
-    {
-      print("Employee has no vehicle registerd")
-    }
-    else if(employee._Vehicle is Car)
-    {
-    print("Employee has a Car\n")
-    let carObj = employee._Vehicle as! Car
-    employee._Vehicle?._VehicleType = "Car"
-    distanceTravelled = carObj._distanceTravelled
-    capacity = carObj._capacity
-    }
-    
-    else if(employee._Vehicle is Motorcycle)
-    {
-    let motorcycleObj = employee._vehicle as! Motorcycle
-    employee._Vehicle?._VehicleType = "Motorcycle"
-    distanceTravelled = motorcycleObj._ distanceTravelled
-    }
+//    if (employee._vehicle is null)
+//    {
+//      print("Employee has no vehicle registerd")
+//    }
+//    else if(employee._Vehicle is Car)
+//    {
+//    print("Employee has a Car\n")
+//    let carObj = employee._Vehicle as! Car
+//    employee._Vehicle?._VehicleType = "Car"
+//    distanceTravelled = carObj._distanceTravelled
+//    capacity = carObj._capacity
+//    }
+//    
+//    else if(employee._Vehicle is Motorcycle)
+//    {
+//    let motorcycleObj = employee._vehicle as! Motorcycle
+//    employee._Vehicle?._VehicleType = "Motorcycle"
+//    distanceTravelled = motorcycleObj._ distanceTravelled
+//    }
     
     var totalSalary: Double
     func calcEarnings() -> Double
@@ -46,9 +46,12 @@ class FullTime: Employee
         return totalSalary
     }
     
+
    override func printMyData() 
+
     {
         super.printMyData()
+        print("Total Salary : \(totalSalary)")
     }
     
 }
