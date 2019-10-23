@@ -74,9 +74,12 @@ class Employee{
         }
         else if (vehicle.vehicleType == .Car)
         {
-            //let car: Car = Vehicle as! Car
-                      // Car.printMyData()
             print("Employee has a car")
+           // let car: Car = Vehicle.vehicleType as! Car
+            Car.printMyData()
+            
+            
+            print("Make: \(Car.make)")
 //            let car: vehicle.vehicleType
 //            car.printMyData()
         }else if (vehicle.vehicleType == .Motorcycle)

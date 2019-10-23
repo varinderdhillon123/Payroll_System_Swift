@@ -17,6 +17,7 @@ class Car: Vehicle
         self.capacity = capacity
         super.init(make: make, color: color, plate: plate, vehicleType: vehicleType)
     }
+    
     override func printMyData()
     {
         super.printMyData()
