@@ -20,8 +20,11 @@ class Car: Vehicle
     
     override func printMyData()
     {
+        print("-----------------------------")
+        print("     Employee has a Car      ")
+        print("-----------------------------")
         super.printMyData()
-        print("Distance: \(distanceTravelled.kilometer())",
+        print(" Distance: \(distanceTravelled.kilometer())\n",
             "Capacity: \(capacity.capacity())")
         }
   
