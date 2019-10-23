@@ -6,7 +6,12 @@
 //
 
 import Foundation
-class Motorcycle
+class Motorcycle: Vehicle
 {
+   var distanceTravelled: Double
     
+    init(make: String, color: String, plate: String, distanceTravelled: Double)
+    {
+        self.distanceTravelled = distanceTravelled
+    }
 }
