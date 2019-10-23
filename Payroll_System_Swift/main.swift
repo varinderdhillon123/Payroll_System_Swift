@@ -93,7 +93,23 @@ var v4 = Vehicle(make: "Dodge", color: "Cyan", plate: "CSandhu", vehicleType: .C
 var v5 = Vehicle(make: "Ford", color: "Dark Blue", plate: "Char", vehicleType: .Car)
 var v6 = Vehicle(make: "RAM", color: "Silver", plate: "Deep", vehicleType: .Car)
 var v7 = Vehicle(make: "Ford", color: "Yellow", plate: "PB06", vehicleType: .Car)
-var vehicleDic = [Int: Vehicle]()
+var vehicleDic = [String: Vehicle]()
+
+emp3.addVehicle(v: v1)
+emp2.addVehicle(v: v3)
+emp2.addVehicle(v: v5)
+
+
+func addEmployee(e:Employee){
+    empDic.updateValue(e, forKey: e.empID)
+    }
+addEmployee(e: emp1)
+addEmployee(e: emp2)
+addEmployee(e: emp3)
+
+for e in empDic.keys.sorted(){
+    empDic[e]?.printMyData()
+}
 
 
 
