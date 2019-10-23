@@ -19,9 +19,11 @@ class Intern: Employee
     super.init(empID: empID, name: name, age: age, emptype: emptype)
 }
     
-    override func printMyData() -> String
+     func printMyData() -> String
     {
-        
+        super.printMyData()
+        print("School Name: \(schoolName)",
+            "Earnings: \(earnings)")
     }
     
     
