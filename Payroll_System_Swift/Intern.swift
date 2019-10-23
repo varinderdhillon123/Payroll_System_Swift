@@ -23,7 +23,7 @@ class Intern: Employee
     {
         super.printMyData()
         print("School Name: \(schoolName)")
-        print("Earnings: \(earnings)")
+        print("Earnings: \(earnings.Currency())")
     }
     
     

@@ -30,6 +30,7 @@ class FixedBasedPartTime: PartTime
         print("FixedAmount: \(fixedAmount.Currency())")
         print("Total Earnings: \(calEarnings().Currency())")
         print(checkVehicle())
+
     }
     
     

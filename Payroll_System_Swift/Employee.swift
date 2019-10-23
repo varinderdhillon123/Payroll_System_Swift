@@ -63,7 +63,7 @@ class Employee{
             ---------------------------------------
             Employee Id: \(empID)
             Name: \(name)
-            Age: \(age)
+             Age: \(age.Years())
             Employee Birth Year : \(birthYear)
             """)
     }
