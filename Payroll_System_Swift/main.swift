@@ -61,17 +61,16 @@ func readJsonFileArray(jsonFileName: String)
             
             if emp.emptype! == .Intern {  //"Intern"{
                 //  print("\n\n\n")
-//                let obj = Intern(empID: emp.id!,name: emp.name!, age: emp.age!, emptype: 100.0, schoolName: "Lambton", earnings: emp.emptype!)
-                let obj = Intern(empID: )
-                obj.printMyData()
+               let obj = Intern(empID: emp.empID!,name: emp.name!, age: emp.age!, emptype: emp.emptype!, schoolName: "Lambton", earnings: 100.0)
+                   obj.printMyData()
             }
-            else if emp.emptype==  .PartTime{   //"PartTime"
-            {
-                // print("\n\n")
-                let PTobj = PartTime(empID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: user.hourswork!)
-                PTobj.printMyData()
-                
-            }
+//            else if emp.emptype! == .PartTime {   //"PartTime"
+//            {
+//                // print("\n\n")
+//                let PTobj = PartTime(empID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: user.hourswork!)
+//                PTobj.printMyData()
+//
+//            }
             
             
             
