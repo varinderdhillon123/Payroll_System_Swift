@@ -23,7 +23,7 @@ class Motorcycle: Vehicle
     override func printMyData()
     {
        print("Distance Travelled: \(distanceTravelled)")
-        //print()
+        
        
     }
 }
