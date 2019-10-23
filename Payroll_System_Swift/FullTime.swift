@@ -31,6 +31,7 @@ class FullTime: Employee
     distanceTravelled = carObj._distanceTravelled
     capacity = carObj._capacity
     }
+    
     else if(employee._Vehicle is Motorcycle)
     {
     let motorcycleObj = employee._vehicle as! Motorcycle
