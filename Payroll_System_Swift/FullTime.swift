@@ -39,7 +39,7 @@ class FullTime: Employee
 //    distanceTravelled = motorcycleObj._ distanceTravelled
 //    }
     
-    var totalSalary: Double
+    var totalSalary: Double = 0.0
     func calcEarnings() -> Double
     {
         totalSalary = salary+bonus
