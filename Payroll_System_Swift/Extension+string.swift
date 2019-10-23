@@ -6,12 +6,9 @@
 //
 
 import Foundation
-extension Double
+extension String
 {
-    func kilometer() ->String
-    {
-        return "\(self) Km"
-    }
+    
     
     func capacity() ->String
     {
