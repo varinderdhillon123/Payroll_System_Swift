@@ -35,8 +35,13 @@ class Employee{
    
 
     //var vehicleDictionary = [Int:Vehicle]()
-    var vehicle:Vehicle!
+    var vehicleDic = [String:Vehicle]()
 
+    func addVehicle(v:Vehicle){
+        vehicleDic.updateValue(v, forKey: v.plate)
+        
+    }
+    
     init(empID: Int, name: String, age:Int, emptype: TypeofEmployee)
      {
         self.empID = empID
