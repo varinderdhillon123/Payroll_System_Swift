@@ -8,5 +8,6 @@
 import Foundation
 class Intern: Employee
 {
-    
+    private var schoolName: String
+    private var earnings: Double
 }
