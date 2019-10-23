@@ -19,7 +19,10 @@ class Intern: Employee
     super.init(empID: empID, name: name, age: age, emptype: emptype)
 }
     
-    
+    override func printMyData() -> String
+    {
+        
+    }
     
     
 }
