@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B26A7802360C4B700DBA468 /* FullTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A7732360C4B600DBA468 /* FullTime.swift */; };
+		9B26A7812360C4B700DBA468 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A7742360C4B600DBA468 /* Car.swift */; };
+		9B26A7822360C4B700DBA468 /* IPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A7752360C4B600DBA468 /* IPrintable.swift */; };
+		9B26A7832360C4B700DBA468 /* PartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A7772360C4B600DBA468 /* PartTime.swift */; };
+		9B26A7842360C4B700DBA468 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A7782360C4B700DBA468 /* Vehicle.swift */; };
+		9B26A7852360C4B700DBA468 /* extension+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A7792360C4B700DBA468 /* extension+Double.swift */; };
+		9B26A7862360C4B700DBA468 /* Intern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A77A2360C4B700DBA468 /* Intern.swift */; };
+		9B26A7872360C4B700DBA468 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A77B2360C4B700DBA468 /* Employee.swift */; };
+		9B26A7882360C4B700DBA468 /* CommissionBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A77C2360C4B700DBA468 /* CommissionBasedPartTime.swift */; };
+		9B26A7892360C4B700DBA468 /* FixedBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A77D2360C4B700DBA468 /* FixedBasedPartTime.swift */; };
+		9B26A78A2360C4B700DBA468 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A77E2360C4B700DBA468 /* Motorcycle.swift */; };
+		9B26A78B2360C4B700DBA468 /* Extension+string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A77F2360C4B700DBA468 /* Extension+string.swift */; };
 		9B62C4352357CDA300B971FE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B62C4342357CDA300B971FE /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +35,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9B26A7732360C4B600DBA468 /* FullTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullTime.swift; sourceTree = "<group>"; };
+		9B26A7742360C4B600DBA468 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		9B26A7752360C4B600DBA468 /* IPrintable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPrintable.swift; sourceTree = "<group>"; };
+		9B26A7762360C4B600DBA468 /* empData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empData.json; sourceTree = "<group>"; };
+		9B26A7772360C4B600DBA468 /* PartTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartTime.swift; sourceTree = "<group>"; };
+		9B26A7782360C4B700DBA468 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		9B26A7792360C4B700DBA468 /* extension+Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension+Double.swift"; sourceTree = "<group>"; };
+		9B26A77A2360C4B700DBA468 /* Intern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intern.swift; sourceTree = "<group>"; };
+		9B26A77B2360C4B700DBA468 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		9B26A77C2360C4B700DBA468 /* CommissionBasedPartTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommissionBasedPartTime.swift; sourceTree = "<group>"; };
+		9B26A77D2360C4B700DBA468 /* FixedBasedPartTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedBasedPartTime.swift; sourceTree = "<group>"; };
+		9B26A77E2360C4B700DBA468 /* Motorcycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
+		9B26A77F2360C4B700DBA468 /* Extension+string.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+string.swift"; sourceTree = "<group>"; };
 		9B62C4312357CDA300B971FE /* Payroll_System_Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Payroll_System_Swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B62C4342357CDA300B971FE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +83,19 @@
 			isa = PBXGroup;
 			children = (
 				9B62C4342357CDA300B971FE /* main.swift */,
+				9B26A7742360C4B600DBA468 /* Car.swift */,
+				9B26A77C2360C4B700DBA468 /* CommissionBasedPartTime.swift */,
+				9B26A7762360C4B600DBA468 /* empData.json */,
+				9B26A77B2360C4B700DBA468 /* Employee.swift */,
+				9B26A7792360C4B700DBA468 /* extension+Double.swift */,
+				9B26A77F2360C4B700DBA468 /* Extension+string.swift */,
+				9B26A77D2360C4B700DBA468 /* FixedBasedPartTime.swift */,
+				9B26A7732360C4B600DBA468 /* FullTime.swift */,
+				9B26A77A2360C4B700DBA468 /* Intern.swift */,
+				9B26A7752360C4B600DBA468 /* IPrintable.swift */,
+				9B26A77E2360C4B700DBA468 /* Motorcycle.swift */,
+				9B26A7772360C4B600DBA468 /* PartTime.swift */,
+				9B26A7782360C4B700DBA468 /* Vehicle.swift */,
 			);
 			path = Payroll_System_Swift;
 			sourceTree = "<group>";
@@ -118,7 +156,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B26A7842360C4B700DBA468 /* Vehicle.swift in Sources */,
+				9B26A7872360C4B700DBA468 /* Employee.swift in Sources */,
 				9B62C4352357CDA300B971FE /* main.swift in Sources */,
+				9B26A7822360C4B700DBA468 /* IPrintable.swift in Sources */,
+				9B26A78A2360C4B700DBA468 /* Motorcycle.swift in Sources */,
+				9B26A78B2360C4B700DBA468 /* Extension+string.swift in Sources */,
+				9B26A7802360C4B700DBA468 /* FullTime.swift in Sources */,
+				9B26A7892360C4B700DBA468 /* FixedBasedPartTime.swift in Sources */,
+				9B26A7852360C4B700DBA468 /* extension+Double.swift in Sources */,
+				9B26A7882360C4B700DBA468 /* CommissionBasedPartTime.swift in Sources */,
+				9B26A7832360C4B700DBA468 /* PartTime.swift in Sources */,
+				9B26A7812360C4B700DBA468 /* Car.swift in Sources */,
+				9B26A7862360C4B700DBA468 /* Intern.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
