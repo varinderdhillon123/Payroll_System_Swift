@@ -12,12 +12,12 @@ class Vehicle: IPrintable
     var color: String
     var plate: String
     
-    enum TypeofVehicle{
-        case Car
-        case Motorcycle
-        case None
-    }
-     public var vehicleType:TypeofVehicle = .None
+//    enum TypeofVehicle{
+//        case Car
+//        case Motorcycle
+//        case None
+//    }
+    public var vehicleType:String = "" //:TypeofVehicle = .None
 
     init(make: String, color: String, plate: String)
     {

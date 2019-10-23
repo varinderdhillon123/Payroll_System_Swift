@@ -22,6 +22,7 @@ class Intern: Employee
     override func printMyData() //-> String
     {
         super.printMyData()
+        print("--Employee is Intern-- ")
         print("School Name: \(schoolName)")
         print("Earnings: \(earnings)")
     }

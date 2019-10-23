@@ -64,17 +64,19 @@ class Employee{
             Employee Id: \(empID)
             Name: \(name)
             Age: \(age)
-            Employee Birth Year : \(birthYear)
+            Employee's Birth Year : \(birthYear)
             """)
     }
     func checkVehicle()
     {
         if (vehicle?.vehicleType == nil){
             print("Employee has no Vehicle")
+            vehicle?.printMyData()
         }
-        else if (vehicle?.vehicleType == .Car)
+        else if(vehicle is Car)
+        //else if (vehicle?.vehicleType == .Car)
         {
-            print("Employee has a car")
+           // print("Employee has a car")
            // let car: Car = Vehicle.vehicleType as! Car
             vehicle?.printMyData()
             
@@ -82,7 +84,8 @@ class Employee{
             //print("Make: \(Car)")
 //            let car: vehicle.vehicleType
 //            car.printMyData()
-        }else if (vehicle?.vehicleType == .Motorcycle)
+        }//else if (vehicle?.vehicleType == .Motorcycle)
+         else if(vehicle is Motorcycle)
         {
             vehicle?.printMyData()
 //            let bike: Motorcycle
