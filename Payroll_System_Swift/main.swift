@@ -85,6 +85,14 @@ func readJsonFileArray(jsonFileName: String)
 
 readJsonFileArray(jsonFileName: "DataofEmp")
 
-var e1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 2.5, hoursWorked: 23, emptype: .FixedBasedPartTime)
-e1.printMyData()
+
+
+var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 2.5, hoursWorked: 23, emptype: .FixedBasedPartTime)
+var emp2 = Intern(empID: 15, name: "Preet", age: 18, emptype: .Intern , schoolName: "Lambton" , earnings: 500.0)
+var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime)
+
+var empDic = [Int: Employee]()
+
+
+
 

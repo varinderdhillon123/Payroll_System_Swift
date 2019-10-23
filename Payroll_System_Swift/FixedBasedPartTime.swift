@@ -17,6 +17,10 @@ class FixedBasedPartTime: PartTime
         super.init(empID: empID,name: name, age: age, rate: rate, hoursWorked: hoursWorked, emptype: emptype)
 
     }
+    
+//    func <#name#>(<#parameters#>) -> <#return type#> {
+//        <#function body#>
+//    }
     override func printMyData()
     {
         super.printMyData()
