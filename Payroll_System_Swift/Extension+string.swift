@@ -15,4 +15,9 @@ extension String
         return "\(self) seater"
     }
     
+    
+    func Years() ->String
+    {
+        return "\(self) years"
+    }
 }
