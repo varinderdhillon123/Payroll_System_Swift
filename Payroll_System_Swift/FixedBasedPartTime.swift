@@ -26,7 +26,7 @@ class FixedBasedPartTime: PartTime
     {
         super.printMyData()
 //        print("NAME: \(name) \n AGE: \(age) \n FIXED AMOUNT: \(fixedAmount) \n HOURS WORKED: \(hoursWorked) \n RATE: \(rate))")
-        print("FixedAmount: \(fixedAmount)")
+        print("FixedAmount: \(fixedAmount.Currency())")
     }
     
     
