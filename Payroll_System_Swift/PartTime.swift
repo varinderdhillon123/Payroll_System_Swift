@@ -6,10 +6,10 @@
 //
 
 import Foundation
-enum RateError: Error
-{
-    case Invalidrate()
-}
+//enum RateError: Error
+//{
+//    case Invalidrate(rate: Double)
+//}
 class PartTime: Employee
 {
     var rate: Double!
