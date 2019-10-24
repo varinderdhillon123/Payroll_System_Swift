@@ -106,8 +106,8 @@ var veh4 = Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTravel
 
 
 var vehicleDic = [String: Vehicle]()
-var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh1)
-var emp2 = Intern(empID: 15, name: "Preet", age: 18, emptype: .Intern , schoolName: "Lambton" , earnings: 500.0, vehicle: veh4)
+var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh4)
+var emp2 = Intern(empID: 15, name: "Preet", age: 18, emptype: .Intern , schoolName: "Lambton" , earnings: 500.0, vehicle: veh1)
 var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime, vehicle: nil) // nil
 emp3.addVehicle(v: veh1)
 emp2.addVehicle(v: veh2)

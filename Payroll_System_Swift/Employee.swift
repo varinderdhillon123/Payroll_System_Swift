@@ -91,7 +91,7 @@ class Employee{
 //            let bike: Motorcycle
 //            Motorcycle.printMyData()
            // Motorcycle.printMyData()
-            print("Employee has motorcycle")
+            
         }
         
     }
