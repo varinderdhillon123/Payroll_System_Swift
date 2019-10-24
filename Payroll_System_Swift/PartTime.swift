@@ -6,6 +6,10 @@
 //
 
 import Foundation
+//enum RateError: Error
+//{
+//    case Invalidrate(rate: Double)
+//}
 class PartTime: Employee
 {
     var rate: Double!
@@ -24,6 +28,7 @@ class PartTime: Employee
 
         print("Rate per hour: \(rate!.Currency())")
          print("No. of hours: \(hoursWorked!.addHours())")
+//        print()
    }
    
 
