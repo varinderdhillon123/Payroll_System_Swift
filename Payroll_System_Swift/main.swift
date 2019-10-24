@@ -160,7 +160,7 @@ print("Employee details for ID = 10  \(getByEmpID(empID: 10))")
 func getByVehPlate(plate: String)
     
 {
-    print("\n ~~~~~~~~~~~~~GETTING DETAILS BY EMPLOYEE ID~~~~~~~~~~~~~~~~")
+    print("\n ~~~~~~~~~~~~~GETTING DETAILS BY Vehicle Plate ~~~~~~~~~~~~~~~~")
     
     if vehicleDic.keys.contains(plate)
         
@@ -174,9 +174,13 @@ func getByVehPlate(plate: String)
         print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         print("\t\t\t\t Customer not found")
         print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-}
+    }}
+    print("____________________________________________")
+    print(" getting information by Vehicle Plate")
+    print("____________________________________________")
+    print("Vehicle details for  plate = PB06 \n \(getByVehPlate(plate: "PB06"))")
+    print("Vehicle details for plate = CAMY  \(getByVehPlate(plate: "CAMY"))")
 
-}
 
 
 
