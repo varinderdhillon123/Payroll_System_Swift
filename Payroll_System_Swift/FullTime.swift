@@ -47,9 +47,7 @@ class FullTime: Employee
         return totalSalary
     }
     
-
-   override func printMyData() 
-
+    override func printMyData()
     {
         super.printMyData()
         print("--Employee is Full Time--")
