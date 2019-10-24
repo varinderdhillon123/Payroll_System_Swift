@@ -7,10 +7,10 @@
 
 import Foundation
 
-enum employeeIdError: Error
-{
-    case Invalidid(empID: Int)
-}
+//enum employeeIdError: Error
+//{
+//    case Invalidid(empID: Int)
+//}
 enum TypeofEmployee{
     case FullTime
     case FixedBasedPartTime
@@ -44,13 +44,13 @@ class Employee{
     var vehicle: Vehicle?
     
     
-    init(empID: Int, name: String, age:Int, emptype: TypeofEmployee, vehicle: Vehicle?) throws
+    init(empID: Int, name: String, age:Int, emptype: TypeofEmployee, vehicle: Vehicle?)
         
      {
-        if empID > 10
-        {
-            throw Invali
-        }
+//        if empID > 10
+//        {
+//            throw Invali
+//        }
         self.empID = empID
         self.name = name
         self.age = age
