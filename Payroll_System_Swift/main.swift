@@ -134,8 +134,8 @@ func getByEmpID(empID: Int){
         print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         print("\t\t\t\t Customer not found")
         print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-        
     }
+    
     
 }
 // getting information by Employee ID
