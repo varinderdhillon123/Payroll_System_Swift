@@ -51,13 +51,15 @@ class Employee{
         vehicleDic.updateValue(v, forKey: v.plate)
         
     }
-    func removeVehicle(v: Vehicle){
-        vehicleDic.remove(at: <#T##Dictionary<String, Vehicle>.Index#>)
+    func removeVehicle(v: String){
+        vehicleDic.removeValue(forKey: v )
+        
     }
     func printMyData()
     {
         
         print("""
+            \n\n
             ---------------------------------------
             \t\t Employee Details
             ---------------------------------------
