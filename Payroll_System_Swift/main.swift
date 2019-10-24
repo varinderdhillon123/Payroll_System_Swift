@@ -111,8 +111,8 @@ var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, 
 var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime, vehicle: nil) // nil
 
 emp3.addVehicle(v: veh1)
-//emp2.addVehicle(v: veh2)
-//emp2.addVehicle(v: veh4)
+emp2.addVehicle(v: veh2)
+emp2.addVehicle(v: veh4)
 
 func addEmployee(e:Employee)
 {
