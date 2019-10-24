@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum {
+enum RateError: Error{
     
 }
 class PartTime: Employee
