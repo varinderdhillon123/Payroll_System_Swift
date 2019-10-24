@@ -6,6 +6,9 @@
 //
 
 import Foundation
+enum {
+    
+}
 class PartTime: Employee
 {
     var rate: Double!
