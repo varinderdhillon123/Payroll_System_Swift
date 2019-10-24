@@ -11,10 +11,10 @@ class FixedBasedPartTime: PartTime
     var fixedAmount: Double
     
 
-    init(empID: Int, name: String, age:Int, fixedAmount: Double, rate: Double, hoursWorked: Float, emptype: TypeofEmployee, vehicle: Vehicle)
+    init(empID: Int, name: String, age:Int, fixedAmount: Double, rate: Double, hoursWorked: Float, emptype: TypeofEmployee)  //, vehicle: Vehicle)
     {
         self.fixedAmount = fixedAmount
-        super.init(empID: empID,name: name, age: age, rate: rate, hoursWorked: hoursWorked, emptype: emptype, vehicle: vehicle)
+        super.init(empID: empID,name: name, age: age, rate: rate, hoursWorked: hoursWorked, emptype: emptype) //, vehicle: vehicle)
 
     }
 //    init(vehicle: Vehicle)

@@ -25,7 +25,7 @@ import Foundation
 //        {
 //            //emp = Employee(empID)
 //            emp = Input()
-//            if let jsonDictionay =  empObject as? [String: Any]
+//   vehicleDic let jsonDictionay =  empObject as? [String: Any]
 //            {
 //                if let emptype = jsonDictionay["emptype"] as? TypeofEmployee
 //
@@ -105,14 +105,16 @@ var veh4 =  Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTrave
 
 
 
-var vehicleDic = [String: Vehicle]()
-var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh4)
+//var vehicleDic = [String: Vehicle]()
+var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime)  //, vehicle: veh4)
 
-var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime, vehicle: nil) // nil
+var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime)  //, vehicle: nil) // nil
+var emp2 = FullTime(empID: 6, name: "Preet", age: 20, salary: 500.0, bonus: 60.0, emptype: .FullTime)  //, vehicle: veh1)
 
 emp3.addVehicle(v: veh1)
 emp2.addVehicle(v: veh2)
 emp2.addVehicle(v: veh4)
+
 
 func addEmployee(e:Employee)
 {
@@ -142,9 +144,10 @@ func getByEmpID(empID: Int){
     
 }
 // getting information by Employee ID
-var getBy = getByEmpID(empID: 8)
-print(getBy)
-
+print(getByEmpID(empID: 8))
+//print(getBy8)
+print(getByEmpID(empID: 6))
+//print(getBy6)
 
 
 

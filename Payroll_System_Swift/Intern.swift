@@ -16,7 +16,7 @@ class Intern: Employee
    private var earnings: Double
    var Vehicle_dict = [Int: Vehicle]()
     
-    init(empID: Int, name: String, age: Int, emptype: TypeofEmployee , schoolName: String , earnings: Double, vehicle: Vehicle?) throws
+    init(empID: Int, name: String, age: Int, emptype: TypeofEmployee , schoolName: String , earnings: Double) throws//, vehicle: Vehicle?) throws
         
 {
     if schoolName.count > 15
@@ -25,7 +25,7 @@ class Intern: Employee
     }
     self.schoolName = schoolName
     self.earnings = earnings
-    super.init(empID: empID, name: name, age: age, emptype: emptype, vehicle: vehicle)
+    super.init(empID: empID, name: name, age: age, emptype: emptype) //, vehicle: vehicle)
 }
     
     override func printMyData() //-> String
