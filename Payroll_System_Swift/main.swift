@@ -106,7 +106,7 @@ var veh4 = Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTravel
 
 
 var vehicleDic = [String: Vehicle]()
-var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 2.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh1)
+var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh1)
 var emp2 = Intern(empID: 15, name: "Preet", age: 18, emptype: .Intern , schoolName: "Lambton" , earnings: 500.0, vehicle: veh4)
 var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime, vehicle: nil) // nil
 emp3.addVehicle(v: veh1)
@@ -131,14 +131,15 @@ func getByEmpID(empID: Int){
     {
         empDic[empID]?.printMyData()
     }else{
-        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-        print("Customer not found")
-        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print("\t\t\t\t Customer not found")
+        print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        
     }
     
 }
 // getting information by Employee ID
-var getBy = getByEmpID(empID: 10)
+var getBy = getByEmpID(empID: 8)
 print(getBy)
 
 

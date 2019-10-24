@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1EE8052360EF1100013C42 /* extension+Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE8042360EF1100013C42 /* extension+Float.swift */; };
 		9B26A7802360C4B700DBA468 /* FullTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A7732360C4B600DBA468 /* FullTime.swift */; };
 		9B26A7812360C4B700DBA468 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A7742360C4B600DBA468 /* Car.swift */; };
 		9B26A7822360C4B700DBA468 /* IPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26A7752360C4B600DBA468 /* IPrintable.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9B1EE8042360EF1100013C42 /* extension+Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension+Float.swift"; sourceTree = "<group>"; };
 		9B26A7732360C4B600DBA468 /* FullTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullTime.swift; sourceTree = "<group>"; };
 		9B26A7742360C4B600DBA468 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		9B26A7752360C4B600DBA468 /* IPrintable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPrintable.swift; sourceTree = "<group>"; };
@@ -84,8 +86,8 @@
 			children = (
 				9B62C4342357CDA300B971FE /* main.swift */,
 				9B26A7742360C4B600DBA468 /* Car.swift */,
-				9B26A77C2360C4B700DBA468 /* CommissionBasedPartTime.swift */,
 				9B26A7762360C4B600DBA468 /* empData.json */,
+				9B26A77C2360C4B700DBA468 /* CommissionBasedPartTime.swift */,
 				9B26A77B2360C4B700DBA468 /* Employee.swift */,
 				9B26A7792360C4B700DBA468 /* extension+Double.swift */,
 				9B26A77F2360C4B700DBA468 /* Extension+string.swift */,
@@ -93,6 +95,7 @@
 				9B26A7732360C4B600DBA468 /* FullTime.swift */,
 				9B26A77A2360C4B700DBA468 /* Intern.swift */,
 				9B26A7752360C4B600DBA468 /* IPrintable.swift */,
+				9B1EE8042360EF1100013C42 /* extension+Float.swift */,
 				9B26A77E2360C4B700DBA468 /* Motorcycle.swift */,
 				9B26A7772360C4B600DBA468 /* PartTime.swift */,
 				9B26A7782360C4B700DBA468 /* Vehicle.swift */,
@@ -158,6 +161,7 @@
 			files = (
 				9B26A7842360C4B700DBA468 /* Vehicle.swift in Sources */,
 				9B26A7872360C4B700DBA468 /* Employee.swift in Sources */,
+				9B1EE8052360EF1100013C42 /* extension+Float.swift in Sources */,
 				9B62C4352357CDA300B971FE /* main.swift in Sources */,
 				9B26A7822360C4B700DBA468 /* IPrintable.swift in Sources */,
 				9B26A78A2360C4B700DBA468 /* Motorcycle.swift in Sources */,
