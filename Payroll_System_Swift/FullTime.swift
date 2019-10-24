@@ -39,6 +39,7 @@ class FullTime: Employee
 //    distanceTravelled = motorcycleObj._ distanceTravelled
 //    }
     
+   
     var totalSalary: Double = 0.0
     func calcEarnings() -> Double
     {
@@ -46,9 +47,7 @@ class FullTime: Employee
         return totalSalary
     }
     
-
-   override func printMyData() 
-
+    override func printMyData()
     {
         super.printMyData()
         print("--Employee is Full Time--")
