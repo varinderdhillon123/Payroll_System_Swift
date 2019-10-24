@@ -12,11 +12,14 @@ class FullTime: Employee
     var bonus: Double!
     
 
-    init(empID: Int, name: String, age: Int, salary: Double, bonus: Double, emptype: TypeofEmployee, vehicle: Vehicle)
+    init(empID: Int, name: String, age: Int, salary: Double, bonus: Double, emptype: TypeofEmployee) //, vehicle: Vehicle)
     {
         self.salary=salary
         self.bonus=bonus
+
+
         super.init(empID: empID, name: name, age: age, emptype: emptype, vehicle: vehicle)
+
         
 
    }
@@ -54,8 +57,10 @@ class FullTime: Employee
         print("--Employee is Full Time--")
         print("Salary : \(salary!.Currency())")
         print(" Bonus : \(bonus.Currency())")
+
         print("Total Salary: \(calcEarnings().Currency())")
         print(checkVehicle())
+
     }
     
 }

@@ -25,7 +25,7 @@ import Foundation
 //        {
 //            //emp = Employee(empID)
 //            emp = Input()
-//            if let jsonDictionay =  empObject as? [String: Any]
+//   vehicleDic let jsonDictionay =  empObject as? [String: Any]
 //            {
 //                if let emptype = jsonDictionay["emptype"] as? TypeofEmployee
 //
@@ -102,16 +102,28 @@ var veh2 =  Motorcycle(make: "Kawasaki", color: "Red", plate: "Var", distanceTra
 var veh4 =  Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTravelled: 4500.00 )
 
 
+
+
+
+
+//var vehicleDic = [String: Vehicle]()
+// var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime)  //, vehicle: veh4)
+
+// var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime)  //, vehicle: nil) // nil
+// var emp2 = FullTime(empID: 6, name: "Preet", age: 20, salary: 500.0, bonus: 60.0, emptype: .FullTime)  //, vehicle: veh1)
+
 var vehicleDic = [String: Vehicle]()
 var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh4)
 var emp2 = Intern(empID: 15, name: "varinder", age: 23, emptype: TypeofEmployee.FullTime, schoolName: "Cambrian", earnings: 123.1, vehicle: veh2)
 var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime, vehicle: nil) // nil
 var emp4 = FullTime(empID: 09,name: "Camy", age:23, salary: 400, bonus: 15, emptype: .FullTime, vehicle: veh3)
 
+
 emp3.addVehicle(v: veh1)
 emp2.addVehicle(v: veh2)
 emp2.addVehicle(v: veh4)
 emp4.addVehicle(v: veh3)
+
 
 func addEmployee(e:Employee)
 {
@@ -150,6 +162,7 @@ func getByEmpID(empID: Int)
     
     
 }
+
 print("____________________________________________")
 print(" getting information by Employee ID")
 print("____________________________________________")

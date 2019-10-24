@@ -28,9 +28,11 @@ class Vehicle: IPrintable
     }
     
     func addVehicle(v:Vehicle){
+
         vehicleDic.updateValue(v, forKey: v.plate)
       }
    
+
     
     func printMyData()
     {

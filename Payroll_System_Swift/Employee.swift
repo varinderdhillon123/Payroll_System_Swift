@@ -7,6 +7,14 @@
 
 import Foundation
 
+//enum TypeofEmployee{
+//    case FullTime
+//    case FixedBasedPartTime
+//    case CommissionBasedPartTime
+//    case Intern
+//}
+
+
 //enum employeeIdError: Error
 //{
 //    case Invalidid(empID: Int)
@@ -18,6 +26,7 @@ enum TypeofEmployee{
     case Intern
 }
 
+
 class Employee{
 
     var empID: Int
@@ -26,26 +35,22 @@ class Employee{
     var emptype: TypeofEmployee
     //let calendar = Calendar.current
     //var currentYear = calendar.component(.year, from: Date)
-
-    
     let currentYear = Calendar.current.component(.year, from: Date())
-//    calendar.component(.month, from: date)
-//    calendar.component(.day, from: date)
-    
-
     var birthYear : Int{
-        
         return currentYear-age
     }  //https://stackoverflow.com/questions/48670169/set-a-variable-with-current-year-in-swift
    
-
     //var vehicleDictionary = [Int:Vehicle]()
-    //var vehicleDic = [String:Vehicle]()
+    var vehicleDic = [TypeofVehicle: Vehicle]()
     var vehicle: Vehicle?
     
     
+
+    
+
     init(empID: Int, name: String, age:Int, emptype: TypeofEmployee, vehicle: Vehicle?)
         
+
      {
 //        if empID > 10
 //        {
@@ -55,7 +60,7 @@ class Employee{
         self.name = name
         self.age = age
         self.emptype = emptype
-        self.vehicle = vehicle
+        //self.vehicle = vehicle
      }
     func addVehicle(v:Vehicle){
         vehicleDic.updateValue(v, forKey: v.plate)
@@ -93,7 +98,7 @@ class Employee{
             vehicle?.printMyData()
         }
         else if(vehicle is Car)
-        //else if (vehicle?.vehicleType == .Car)
+        //else if (vehicleDic.vehicleType.contains(.Car)) // == .Car)
         {
            // print("Employee has a car")
            // let car: Car = Vehicle.vehicleType as! Car
