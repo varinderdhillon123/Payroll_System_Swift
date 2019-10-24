@@ -102,17 +102,14 @@ var veh2 =  Motorcycle(make: "Kawasaki", color: "Red", plate: "Var", distanceTra
 var veh4 =  Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTravelled: 4500.00 )
 
 
-
-
-
 var vehicleDic = [String: Vehicle]()
 var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh4)
 
 var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime, vehicle: nil) // nil
 
 emp3.addVehicle(v: veh1)
-emp2.addVehicle(v: veh2)
-emp2.addVehicle(v: veh4)
+//emp2.addVehicle(v: veh2)
+//emp2.addVehicle(v: veh4)
 
 func addEmployee(e:Employee)
 {
@@ -146,6 +143,7 @@ func getByEmpID(empID: Int)
         print("\t\t\t\t Customer not found")
         print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     }
+    
     
 }
 // getting information by Employee ID
