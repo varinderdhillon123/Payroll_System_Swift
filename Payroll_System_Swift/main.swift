@@ -84,17 +84,17 @@ import Foundation
 
 var empDic = [Int: Employee]()
 
-//do
-//{
+do
+{
 
-    var veh1 = Car(make: "Ford", color: "Yellow", plate: "PB06", distanceTravelled: 5000, capacity: "3")
-    var veh3 = Car(make: "Dodge", color: "Cyan", plate: "CSandhu", distanceTravelled: 2020.22, capacity: "3")
+    var veh1: Car = try Car(make: "Ford", color: "Yellow", plate: "PB06", distanceTravelled: 5000, capacity: "3")
+    var veh3: Car = try Car(make: "Dodge", color: "Cyan", plate: "CSandhu", distanceTravelled: 2020.22, capacity: "3")
     
-//}
-//catch capacityError.InvalidCapacity(let capacity)
-//{
-//    print("Above the capacity:  \(capacity)")
-//}
+}
+catch capacityError.InvalidCapacity(let capacity)
+{
+    print("Above the capacity:  \(capacity)")
+}
 
 
     
@@ -119,7 +119,7 @@ func addEmployee(e:Employee)
     empDic.updateValue(e, forKey: e.empID)
 }
 addEmployee(e: emp1)
-addEmployee(e: emp2)
+//addEmployee(e: emp2)
 addEmployee(e: emp3)
 
     
@@ -128,22 +128,29 @@ for e in empDic.keys.sorted()
 {
     empDic[e]?.printMyData()
 }
-func getByEmpID(empID: Int){
+
+func getByEmpID(empID: Int)
+    
+{
     print("\n ~~~~~~~~~~~~~ GETTING DETAILS BY EMPLOYEE ID~~~~~~~~~~~~~~~~")
+    
     if empDic.keys.contains(empID)
     {
         empDic[empID]?.printMyData()
-    }else{
+    }
+        
+    else
+        
+    {
         print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         print("\t\t\t\t Customer not found")
         print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-        
     }
     
 }
 // getting information by Employee ID
-var getBy = getByEmpID(empID: 8)
-print(getBy)
+//var getBy = getByEmpID(empID: 8)
+//print(getBy)
 
 
 
