@@ -157,8 +157,26 @@ print("Employee details for  ID = 8 \n \(getByEmpID(empID: 8))")
 print("Employee details for ID = 10  \(getByEmpID(empID: 10))")
 //print(getBy)
 
+func getByVehPlate(plate: String)
+    
+{
+    print("\n ~~~~~~~~~~~~~GETTING DETAILS BY EMPLOYEE ID~~~~~~~~~~~~~~~~")
+    
+    if vehicleDic.keys.contains(plate)
+        
+    {
+        vehicleDic[plate]?.printMyData()
+    }
+        
+    else
+        
+    {
+        print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print("\t\t\t\t Customer not found")
+        print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+}
 
-
+}
 
 
 
