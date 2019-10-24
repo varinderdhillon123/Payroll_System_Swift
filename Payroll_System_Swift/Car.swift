@@ -6,10 +6,10 @@
 //
 
 import Foundation
-enum capacityError: Error
-{
-    case InvalidCapacity(capacity: String)
-}
+//enum capacityError: Error
+//{
+//    case InvalidCapacity(capacity: String)
+//}
 class Car: Vehicle
 {
   var distanceTravelled: Double
