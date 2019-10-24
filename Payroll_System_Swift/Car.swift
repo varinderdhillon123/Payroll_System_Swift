@@ -15,14 +15,14 @@ class Car: Vehicle
   var distanceTravelled: Double
   var capacity: String
     
-    init(make: String, color: String, plate: String,  distanceTravelled: Double, capacity: String) throws
+    init(make: String, color: String, plate: String,  distanceTravelled: Double, capacity: String) 
     {
-        if capacity.count > 4
-        {
-            throw capacityError.InvalidCapacity(capacity: capacity)
-        }
-         self.capacity = capacity
-        
+//        if capacity.count > 4
+//        {
+//            throw capacityError.InvalidCapacity(capacity: capacity)
+//        }
+//         self.capacity = capacity
+//
          self.distanceTravelled = distanceTravelled
          super.init(make: make, color: color, plate: plate)
     }
