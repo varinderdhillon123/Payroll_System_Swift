@@ -89,7 +89,7 @@ class Employee{
     func checkVehicle()
     {
         if (vehicle?.vehicleType == nil){
-            print("Employee has no Vehicle")
+            print("***********Employee has no Vehicle*************")
             vehicle?.printMyData()
         }
         else if(vehicle is Car)

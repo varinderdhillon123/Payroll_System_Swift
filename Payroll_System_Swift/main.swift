@@ -104,20 +104,23 @@ var veh4 =  Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTrave
 
 var vehicleDic = [String: Vehicle]()
 var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh4)
-//var emp2 = Intern(empID: 15, name: "varinder", age: 23, emptype: TypeofEmployee.FullTime, schoolName: "Cambrian", earnings: 123.1, vehicle: veh2)
+var emp2 = Intern(empID: 15, name: "varinder", age: 23, emptype: TypeofEmployee.FullTime, schoolName: "Cambrian", earnings: 123.1, vehicle: veh2)
 var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime, vehicle: nil) // nil
+var emp4 = FullTime(empID: 09,name: "Camy", age:23, salary: 400, bonus: 15, emptype: .FullTime, vehicle: veh3)
 
 emp3.addVehicle(v: veh1)
-//emp2.addVehicle(v: veh2)
-//emp2.addVehicle(v: veh4)
+emp2.addVehicle(v: veh2)
+emp2.addVehicle(v: veh4)
+emp4.addVehicle(v: veh3)
 
 func addEmployee(e:Employee)
 {
     empDic.updateValue(e, forKey: e.empID)
 }
 addEmployee(e: emp1)
-//addEmployee(e: emp2)
+addEmployee(e: emp2)
 addEmployee(e: emp3)
+addEmployee(e: emp4)
 
     
 
@@ -147,8 +150,11 @@ func getByEmpID(empID: Int)
     
     
 }
-// getting information by Employee ID
-//var getBy = getByEmpID(empID: 8)
+print("____________________________________________")
+print(" getting information by Employee ID")
+print("____________________________________________")
+print("Employee ID: 8 \n \(getByEmpID(empID: 8))")
+print("Employee ID: 10  \(getByEmpID(empID: 10))")
 //print(getBy)
 
 

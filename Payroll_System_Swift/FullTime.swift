@@ -17,6 +17,7 @@ class FullTime: Employee
         self.salary=salary
         self.bonus=bonus
         super.init(empID: empID, name: name, age: age, emptype: emptype, vehicle: vehicle)
+        
 
    }
 //    if (employee._vehicle is null)
@@ -53,7 +54,8 @@ class FullTime: Employee
         print("--Employee is Full Time--")
         print("Salary : \(salary!.Currency())")
         print(" Bonus : \(bonus.Currency())")
-        print("Total Salary: \(totalSalary.Currency())")
+        print("Total Salary: \(calcEarnings().Currency())")
+        print(checkVehicle())
     }
     
 }
