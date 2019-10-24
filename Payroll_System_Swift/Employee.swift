@@ -97,8 +97,8 @@ class Employee{
          else if(vehicle is Motorcycle)
         {
             vehicle?.printMyData()
-//            let bike: Motorcycle
-//            Motorcycle.printMyData()
+          //  let bike: Motorcycle
+           // Motorcycle.printMyData()
            // Motorcycle.printMyData()
         }
         
