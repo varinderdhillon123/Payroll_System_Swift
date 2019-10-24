@@ -102,9 +102,6 @@ var veh2 =  Motorcycle(make: "Kawasaki", color: "Red", plate: "Var", distanceTra
 var veh4 =  Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTravelled: 4500.00 )
 
 
-
-
-
 var vehicleDic = [String: Vehicle]()
 var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh4)
 
