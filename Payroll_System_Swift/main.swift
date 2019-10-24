@@ -87,8 +87,8 @@ var empDic = [Int: Employee]()
 //do
 //{
 
-    var veh1 = Car(make: "Ford", color: "Yellow", plate: "PB06", distanceTravelled: 5000, capacity: "3")
-    var veh3 = Car(make: "Dodge", color: "Cyan", plate: "CSandhu", distanceTravelled: 2020.22, capacity: "3")
+    var veh1: Car =  Car(make: "Ford", color: "Yellow", plate: "PB06", distanceTravelled: 5000, capacity: "3")
+    var veh3: Car =  Car(make: "Dodge", color: "Cyan", plate: "CSandhu", distanceTravelled: 2020.22, capacity: "3")
     
 //}
 //catch capacityError.InvalidCapacity(let capacity)
@@ -105,15 +105,24 @@ var veh4 =  Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTrave
 
 
 
-//var vehicleDic = [String: Vehicle]()
-var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime)  //, vehicle: veh4)
 
-var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime)  //, vehicle: nil) // nil
-var emp2 = FullTime(empID: 6, name: "Preet", age: 20, salary: 500.0, bonus: 60.0, emptype: .FullTime)  //, vehicle: veh1)
+//var vehicleDic = [String: Vehicle]()
+// var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime)  //, vehicle: veh4)
+
+// var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime)  //, vehicle: nil) // nil
+// var emp2 = FullTime(empID: 6, name: "Preet", age: 20, salary: 500.0, bonus: 60.0, emptype: .FullTime)  //, vehicle: veh1)
+
+var vehicleDic = [String: Vehicle]()
+var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh4)
+var emp2 = Intern(empID: 15, name: "varinder", age: 23, emptype: TypeofEmployee.FullTime, schoolName: "Cambrian", earnings: 123.1, vehicle: veh2)
+var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime, vehicle: nil) // nil
+var emp4 = FullTime(empID: 09,name: "Camy", age:23, salary: 400, bonus: 15, emptype: .FullTime, vehicle: veh3)
+
 
 emp3.addVehicle(v: veh1)
 emp2.addVehicle(v: veh2)
 emp2.addVehicle(v: veh4)
+emp4.addVehicle(v: veh3)
 
 
 func addEmployee(e:Employee)
@@ -123,6 +132,7 @@ func addEmployee(e:Employee)
 addEmployee(e: emp1)
 addEmployee(e: emp2)
 addEmployee(e: emp3)
+addEmployee(e: emp4)
 
     
 
@@ -130,24 +140,36 @@ for e in empDic.keys.sorted()
 {
     empDic[e]?.printMyData()
 }
-func getByEmpID(empID: Int){
-    print("\n ~~~~~~~~~~~~~ GETTING DETAILS BY EMPLOYEE ID~~~~~~~~~~~~~~~~")
+
+func getByEmpID(empID: Int)
+    
+{
+    print("\n ~~~~~~~~~~~~~GETTING DETAILS BY EMPLOYEE ID~~~~~~~~~~~~~~~~")
+    
     if empDic.keys.contains(empID)
+        
     {
         empDic[empID]?.printMyData()
-    }else{
+    }
+        
+    else
+        
+    {
         print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         print("\t\t\t\t Customer not found")
         print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-        
     }
     
+    
 }
-// getting information by Employee ID
-print(getByEmpID(empID: 8))
-//print(getBy8)
-print(getByEmpID(empID: 6))
-//print(getBy6)
+
+print("____________________________________________")
+print(" getting information by Employee ID")
+print("____________________________________________")
+print("Employee ID: 8 \n \(getByEmpID(empID: 8))")
+print("Employee ID: 10  \(getByEmpID(empID: 10))")
+//print(getBy)
+
 
 
 

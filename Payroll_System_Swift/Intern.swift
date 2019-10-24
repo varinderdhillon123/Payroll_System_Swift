@@ -6,23 +6,24 @@
 //
 
 import Foundation
-enum nameError: Error
-{
-    case Invalidname(name: String)
-}
+//enum nameError: Error
+//{
+//    case Invalidname(name: String)
+//}
 class Intern: Employee
 {
    private var schoolName: String
    private var earnings: Double
    var Vehicle_dict = [Int: Vehicle]()
-    
-    init(empID: Int, name: String, age: Int, emptype: TypeofEmployee , schoolName: String , earnings: Double) throws//, vehicle: Vehicle?) throws
+
+    init(empID: Int, name: String, age: Int, emptype: TypeofEmployee , schoolName: String , earnings: Double, vehicle: Vehicle?) 
+
         
 {
-    if schoolName.count > 15
-    {
-        throw nameError.Invalidname(name: name)
-    }
+//    if schoolName.count > 15
+//    {
+//        throw nameError.Invalidname(name: name)
+//    }
     self.schoolName = schoolName
     self.earnings = earnings
     super.init(empID: empID, name: name, age: age, emptype: emptype) //, vehicle: vehicle)
@@ -34,6 +35,7 @@ class Intern: Employee
         print("--Employee is Intern-- ")
         print("School Name: \(schoolName)")
         print("Earnings: \(earnings.Currency())")
+        print(checkVehicle())
     }
     
     

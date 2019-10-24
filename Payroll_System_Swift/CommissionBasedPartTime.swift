@@ -18,6 +18,7 @@ class CommissionBasedPartTime: PartTime
     }
 
 
+    
     func calcEarnings() -> Double
     {
         return (rate * Double(hoursWorked) + commissionPerc)

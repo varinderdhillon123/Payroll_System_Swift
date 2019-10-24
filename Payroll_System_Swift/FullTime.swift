@@ -16,7 +16,10 @@ class FullTime: Employee
     {
         self.salary=salary
         self.bonus=bonus
-        super.init(empID: empID, name: name, age: age, emptype: emptype) //, vehicle: vehicle)
+
+
+        super.init(empID: empID, name: name, age: age, emptype: emptype, vehicle: vehicle)
+
         
 
    }
@@ -40,6 +43,7 @@ class FullTime: Employee
 //    distanceTravelled = motorcycleObj._ distanceTravelled
 //    }
     
+   
     var totalSalary: Double = 0.0
     func calcEarnings() -> Double
     {
@@ -47,16 +51,16 @@ class FullTime: Employee
         return totalSalary
     }
     
-
-   override func printMyData() 
-
+    override func printMyData()
     {
         super.printMyData()
         print("--Employee is Full Time--")
         print("Salary : \(salary!.Currency())")
         print(" Bonus : \(bonus.Currency())")
-        print("Total Salary: \(totalSalary.Currency())")
-         print(checkVehicle())
+
+        print("Total Salary: \(calcEarnings().Currency())")
+        print(checkVehicle())
+
     }
     
 }

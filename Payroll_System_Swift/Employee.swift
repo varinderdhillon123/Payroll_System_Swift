@@ -6,12 +6,26 @@
 //
 
 import Foundation
+
 //enum TypeofEmployee{
 //    case FullTime
 //    case FixedBasedPartTime
 //    case CommissionBasedPartTime
 //    case Intern
 //}
+
+
+//enum employeeIdError: Error
+//{
+//    case Invalidid(empID: Int)
+//}
+enum TypeofEmployee{
+    case FullTime
+    case FixedBasedPartTime
+    case CommissionBasedPartTime
+    case Intern
+}
+
 
 class Employee{
 
@@ -31,8 +45,17 @@ class Employee{
     var vehicle: Vehicle?
     
     
-    init(empID: Int, name: String, age:Int, emptype: TypeofEmployee) //, vehicle: Vehicle?)
+
+    
+
+    init(empID: Int, name: String, age:Int, emptype: TypeofEmployee, vehicle: Vehicle?)
+        
+
      {
+//        if empID > 10
+//        {
+//            throw Invali
+//        }
         self.empID = empID
         self.name = name
         self.age = age
@@ -44,6 +67,7 @@ class Employee{
 
         
     }
+    
     func removeVehicle(v: String){
         vehicleDic.removeValue(forKey: v )
         
@@ -70,7 +94,7 @@ class Employee{
     func checkVehicle()
     {
         if (vehicle?.vehicleType == nil){
-            print("Employee has no Vehicle")
+            print("***********Employee has no Vehicle*************")
             vehicle?.printMyData()
         }
         else if(vehicle is Car)
@@ -88,11 +112,11 @@ class Employee{
          else if(vehicle is Motorcycle)
         {
             vehicle?.printMyData()
-//            let bike: Motorcycle
-//            Motorcycle.printMyData()
+          //  let bike: Motorcycle
            // Motorcycle.printMyData()
-            
+           // Motorcycle.printMyData()
         }
+        
         
     }
     }

@@ -21,17 +21,18 @@ class Car: Vehicle
 //        {
 //            throw capacityError.InvalidCapacity(capacity: capacity)
 //        }
-         self.capacity = capacity
-        
+//         self.capacity = capacity
+//
          self.distanceTravelled = distanceTravelled
+        self.capacity = capacity
          super.init(make: make, color: color, plate: plate)
     }
     
     override func printMyData()
     {
-        print("-----------------------------")
-        print("     Employee has a Car      ")
-        print("-----------------------------")
+       // print("-----------------------------")
+        print("\n***********Employee has a Car************")
+        //print("-----------------------------")
         super.printMyData()
         print(" Distance: \(distanceTravelled.kilometer())\n",
             "Capacity: \(capacity.capacity())")
