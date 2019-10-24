@@ -89,7 +89,7 @@ do
 
     var veh1: Car = try Car(make: "Ford", color: "Yellow", plate: "PB06", distanceTravelled: 5000, capacity: "3")
     var veh3: Car = try Car(make: "Dodge", color: "Cyan", plate: "CSandhu", distanceTravelled: 2020.22, capacity: "3")
-    emp3.addVehicle(v: veh1)
+    
 }
 catch capacityError.InvalidCapacity(let capacity)
 {
@@ -110,7 +110,7 @@ var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, 
 
 var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime, vehicle: nil) // nil
 
-
+emp3.addVehicle(v: veh1)
 //emp2.addVehicle(v: veh2)
 //emp2.addVehicle(v: veh4)
 
