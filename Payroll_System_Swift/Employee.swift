@@ -6,6 +6,11 @@
 //
 
 import Foundation
+
+enum employeeIdError: Error
+{
+    
+}
 enum TypeofEmployee{
     case FullTime
     case FixedBasedPartTime
