@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum capacityEror: Error
+enum capacityError: Error
 {
     case InvalidCapacity(capacity: String)
 }
@@ -17,18 +17,13 @@ class Car: Vehicle
     
     init(make: String, color: String, plate: String,  distanceTravelled: Double, capacity: String) throws
     {
-        
-    {
-        if capacity > "4"
+        if capacity.count > 4
         {
-            throw capacityEror.InvalidCapacity(capacity: capacity)
+            throw capacityError.InvalidCapacity(capacity: capacity)
         }
-    }
-        
-    
-        self.distanceTravelled = distanceTravelled
-        self.capacity = capacity
-        super.init(make: make, color: color, plate: plate)
+         self.capacity = capacity
+         self.distanceTravelled = distanceTravelled
+         super.init(make: make, color: color, plate: plate)
     }
     
     override func printMyData()

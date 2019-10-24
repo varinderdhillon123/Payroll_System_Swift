@@ -95,12 +95,14 @@ var empDic = [Int: Employee]()
 
 do
 {
-var veh1 = try Car(make: "Ford", color: "Yellow", plate: "PB06", distanceTravelled: 5000, capacity: "2")
-var veh2 = try Motorcycle(make: "Kawasaki", color: "Red", plate: "Var", distanceTravelled: 500.20)
-var veh3 = try Car(make: "Dodge", color: "Cyan", plate: "CSandhu", distanceTravelled: 2020.22, capacity: "2")
-var veh4 = try Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTravelled: 4500.00 )
+var veh1 = try Car(make: "Ford", color: "Yellow", plate: "PB06", distanceTravelled: 5000, capacity: "5")
+var veh3 = try Car(make: "Dodge", color: "Cyan", plate: "CSandhu", distanceTravelled: 2020.22, capacity: "5")
+    
 
-}
+    
+var veh2 = Motorcycle(make: "Kawasaki", color: "Red", plate: "Var", distanceTravelled: 500.20)
+
+var veh4 = Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTravelled: 4500.00 )
 
 
 
@@ -121,6 +123,15 @@ func addEmployee(e:Employee){
 addEmployee(e: emp1)
 addEmployee(e: emp2)
 addEmployee(e: emp3)
+    
+
+
+}
+catch let error
+    
+{
+    print("Above the capacity: \(error)")
+}
 
 for e in empDic.keys.sorted()
 {
@@ -142,7 +153,6 @@ func getByEmpID(empID: Int){
 // getting information by Employee ID
 var getBy = getByEmpID(empID: 8)
 print(getBy)
-
 
 
 
