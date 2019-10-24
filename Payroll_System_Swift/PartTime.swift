@@ -30,9 +30,9 @@ class PartTime: Employee
          print("No. of hours: \(hoursWorked!.addHours())")
 //        print()
    }
-    func <#name#>(<#parameters#>) -> <#return type#> {
-        <#function body#>
-    }
+//    func <#name#>(<#parameters#>) -> <#return type#> {
+//        <#function body#>
+//    }
    
 
 }
