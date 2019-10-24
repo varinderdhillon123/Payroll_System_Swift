@@ -84,17 +84,17 @@ import Foundation
 
 var empDic = [Int: Employee]()
 
-do
-{
+//do
+//{
 
-    var veh1: Car = try Car(make: "Ford", color: "Yellow", plate: "PB06", distanceTravelled: 5000, capacity: "3")
-    var veh3: Car = try Car(make: "Dodge", color: "Cyan", plate: "CSandhu", distanceTravelled: 2020.22, capacity: "3")
+    var veh1: Car =  Car(make: "Ford", color: "Yellow", plate: "PB06", distanceTravelled: 5000, capacity: "3")
+    var veh3: Car =  Car(make: "Dodge", color: "Cyan", plate: "CSandhu", distanceTravelled: 2020.22, capacity: "3")
     
-}
-catch capacityError.InvalidCapacity(let capacity)
-{
-    print("Above the capacity:  \(capacity)")
-}
+//}
+//catch capacityError.InvalidCapacity(let capacity)
+//{
+//    print("Above the capacity:  \(capacity)")
+//}
 
 
     
@@ -107,7 +107,7 @@ var veh4 =  Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTrave
 
 var vehicleDic = [String: Vehicle]()
 var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh4)
-
+var emp2 = Intern(empID: 15, name: "varinder", age: 23, emptype: TypeofEmployee.FullTime, schoolName: "Cambrian", earnings: 123.1, vehicle: veh2)
 var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime, vehicle: nil) // nil
 
 emp3.addVehicle(v: veh1)
@@ -132,9 +132,10 @@ for e in empDic.keys.sorted()
 func getByEmpID(empID: Int)
     
 {
-    print("\n ~~~~~~~~~~~~~ GETTING DETAILS BY EMPLOYEE ID~~~~~~~~~~~~~~~~")
+    print("\n ~~~~~~~~~~~~~GETTING DETAILS BY EMPLOYEE ID~~~~~~~~~~~~~~~~")
     
     if empDic.keys.contains(empID)
+        
     {
         empDic[empID]?.printMyData()
     }
