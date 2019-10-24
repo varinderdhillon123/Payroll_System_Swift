@@ -100,8 +100,8 @@ class Employee{
 //            let bike: Motorcycle
 //            Motorcycle.printMyData()
            // Motorcycle.printMyData()
-            
         }
+        
         
     }
     }
