@@ -93,13 +93,14 @@ var empDic = [Int: Employee]()
 //var v7 = Vehicle(make: "Ford", color: "Yellow", plate: "PB06", vehicleType: .Car)
 //var v8 = Vehicle(make: "nil", color: "nil", plate: "nil", vehicleType: .None)
 
+do
+{
+var veh1 = try Car(make: "Ford", color: "Yellow", plate: "PB06", distanceTravelled: 5000, capacity: "2")
+var veh2 = try Motorcycle(make: "Kawasaki", color: "Red", plate: "Var", distanceTravelled: 500.20)
+var veh3 = try Car(make: "Dodge", color: "Cyan", plate: "CSandhu", distanceTravelled: 2020.22, capacity: "2")
+var veh4 = try Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTravelled: 4500.00 )
 
-
-var veh1 = Car(make: "Ford", color: "Yellow", plate: "PB06", distanceTravelled: 5000, capacity: "2")
-var veh2 = Motorcycle(make: "Kawasaki", color: "Red", plate: "Var", distanceTravelled: 500.20)
-var veh3 = Car(make: "Dodge", color: "Cyan", plate: "CSandhu", distanceTravelled: 2020.22, capacity: "2")
-var veh4 = Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTravelled: 4500.00 )
-
+}
 
 
 
