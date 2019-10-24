@@ -153,8 +153,8 @@ func getByEmpID(empID: Int)
 print("____________________________________________")
 print(" getting information by Employee ID")
 print("____________________________________________")
-print("Employee ID: 8 \n \(getByEmpID(empID: 8))")
-print("Employee ID: 10  \(getByEmpID(empID: 10))")
+print("Employee details for  ID = 8 \n \(getByEmpID(empID: 8))")
+print("Employee details for ID = 10  \(getByEmpID(empID: 10))")
 //print(getBy)
 
 
