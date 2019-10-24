@@ -51,9 +51,9 @@ class Employee{
         vehicleDic.updateValue(v, forKey: v.plate)
         
     }
-//    func removeVehicle(v: Vehicle){
-//        vehicleDic.r
-//    }
+    func removeVehicle(v: Vehicle){
+        vehicleDic.remove(at: <#T##Dictionary<String, Vehicle>.Index#>)
+    }
     func printMyData()
     {
         
@@ -91,27 +91,10 @@ class Employee{
 //            let bike: Motorcycle
 //            Motorcycle.printMyData()
            // Motorcycle.printMyData()
-            print("Employee has motorcycle")
+            
         }
         
     }
-//        if(Vehicle is Car)
-//        {
-//            let car: Car = Vehicle as! Car
-//            car.printMyData()
-//
-//        }else if(Vehicle is Motorcycle){
-//            let motorcycle: Motorcycle = vehicle as! Motorcycle
-//            motorcycle.printMyData()
-//
-//        }
-//
-//        else
-//        {
-//
-//            print("Employee Has no Vehicle")
-//        }
-
     }
     
 

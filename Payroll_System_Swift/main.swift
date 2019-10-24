@@ -106,12 +106,12 @@ var veh4 = Motorcycle(make: "BMW", color: "Black", plate: "CAMY", distanceTravel
 
 
 var vehicleDic = [String: Vehicle]()
-var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 2.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh1)
-var emp2 = Intern(empID: 15, name: "Preet", age: 18, emptype: .Intern , schoolName: "Lambton" , earnings: 500.0, vehicle: veh4)
+var emp1 = FixedBasedPartTime(empID: 1,name: "ABC", age:25, fixedAmount: 200.0, rate: 22.5, hoursWorked: 23, emptype: .FixedBasedPartTime, vehicle: veh4)
+var emp2 = Intern(empID: 15, name: "Preet", age: 18, emptype: .Intern , schoolName: "Lambton" , earnings: 500.0, vehicle: veh1)
 var emp3 = CommissionBasedPartTime(empID: 10,name: "Camy", age:24, rate: 16.0, hoursWorked: 40, commissionPerc: 15, emptype: .CommissionBasedPartTime, vehicle: nil) // nil
 emp3.addVehicle(v: veh1)
 emp2.addVehicle(v: veh2)
-//emp2.addVehicle(v: _)
+emp2.addVehicle(v: veh4)
 
 
 func addEmployee(e:Employee){
@@ -124,10 +124,25 @@ addEmployee(e: emp3)
 for e in empDic.keys.sorted()
 {
     empDic[e]?.printMyData()
-
-    
+}
+func getByEmpID(empID: Int){
+    print("\n ~~~~~~~~~~~~~ GETTING DETAILS BY EMPLOYEE ID~~~~~~~~~~~~~~~~")
+    if empDic.keys.contains(empID)
+    {
+        empDic[empID]?.printMyData()
+    }else{
+        print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print("\t\t\t\t Customer not found")
+        print("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        
+    }
     
 }
+// getting information by Employee ID
+var getBy = getByEmpID(empID: 8)
+print(getBy)
+
+
 
 
 

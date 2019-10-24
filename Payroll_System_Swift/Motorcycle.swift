@@ -22,6 +22,8 @@ class Motorcycle: Vehicle
     
     override func printMyData()
     {
+       
+        print("\n**********Employee has a MotorCycle**********\n")
         super.printMyData()
        print("Distance Travelled: \(distanceTravelled.Currency())")
         
