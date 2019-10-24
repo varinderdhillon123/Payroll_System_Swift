@@ -49,6 +49,13 @@ class Employee{
      }
     func addVehicle(v:Vehicle){
         vehicleDic.updateValue(v, forKey: v.plate)
+
+        
+    }
+    func removeVehicle(v: String){
+        vehicleDic.removeValue(forKey: v )
+        
+
     }
 //    }
 //    func removeVehicle(v: Vehicle){
@@ -58,6 +65,7 @@ class Employee{
     {
         
         print("""
+            \n\n
             ---------------------------------------
             \t\t Employee Details
             ---------------------------------------
