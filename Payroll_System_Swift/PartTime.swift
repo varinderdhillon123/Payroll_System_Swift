@@ -6,8 +6,9 @@
 //
 
 import Foundation
-enum RateError: Error{
-    
+enum RateError: Error
+{
+    case Invalidrate()
 }
 class PartTime: Employee
 {
