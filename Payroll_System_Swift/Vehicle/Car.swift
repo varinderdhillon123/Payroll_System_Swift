@@ -17,6 +17,7 @@ class Car: Vehicle
     
     init(make: String, color: String, plate: String,  distanceTravelled: Double, capacity: String) 
     {
+        //Exception Handling
 //        if capacity.count > 4
 //        {
 //           throw capacityError.InvalidCapacity(capacity: capacity)
