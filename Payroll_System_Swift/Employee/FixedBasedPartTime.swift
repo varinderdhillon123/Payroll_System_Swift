@@ -21,7 +21,7 @@ class FixedBasedPartTime: PartTime
 //    {
 //        self.vehicle = vehicle
 //    }
-    func calEarnings() -> Double
+    override func calcEarnings() -> Double
     {
            return (rate * Double(hoursWorked) + fixedAmount)
         
@@ -32,7 +32,7 @@ class FixedBasedPartTime: PartTime
         print("--Employee is Fixed Based Part Time--")
 //        print("NAME: \(name) \n AGE: \(age) \n FIXED AMOUNT: \(fixedAmount) \n HOURS WORKED: \(hoursWorked) \n RATE: \(rate))")
         print("FixedAmount: \(fixedAmount.Currency())")
-        print("Total Earnings: \(calEarnings().Currency())")
+        print("Total Earnings: \(calcEarnings().Currency())")
         print(checkVehicle())
 
     }

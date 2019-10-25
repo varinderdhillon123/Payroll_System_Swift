@@ -42,7 +42,7 @@ class FullTime: Employee
     
    
     var totalSalary: Double = 0.0
-    func calcEarnings() -> Double
+    override func calcEarnings() -> Double
     {
         totalSalary = salary+bonus
         return totalSalary

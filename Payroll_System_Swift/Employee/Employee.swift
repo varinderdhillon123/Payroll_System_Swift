@@ -68,6 +68,11 @@ class Employee{
         
 
     }
+    func calcEarnings()->Double
+    {
+        return 1000
+    }
+    
 //    }
 //    func removeVehicle(v: Vehicle){
 //        vehicleDic.remove(at: <#T##Dictionary<String, Vehicle>.Index#>)

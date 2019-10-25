@@ -123,12 +123,13 @@ addEmployee(e: emp3)
 addEmployee(e: emp4)
 
     
-
+var totalPayroll: Double = 0.0
 for e in empDic.keys.sorted()
 {
     empDic[e]?.printMyData()
+    totalPayroll += empDic[e]!.calcEarnings()
 }
-
+print("Total Payroll: \(totalPayroll.Currency())\n\n")
 func getByEmpID(empID: Int)
     
 {
@@ -138,6 +139,7 @@ func getByEmpID(empID: Int)
         
     {
         empDic[empID]?.printMyData()
+        
     }
         
     else
